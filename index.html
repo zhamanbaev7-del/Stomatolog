@@ -1,0 +1,348 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DentalCare Premium — Стоматологическая клиника</title>
+  <meta name="description" content="Современная стоматология без боли: лечение, чистка, имплантация и эстетическая стоматология." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-1"></div>
+  <div class="bg-shape bg-shape-2"></div>
+
+  <header class="header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="#top">
+        <span class="logo-dot"></span>
+        DentalCare Premium
+      </a>
+
+      <nav class="nav">
+        <a href="#advantages">Преимущества</a>
+        <a href="#services">Услуги</a>
+        <a href="#prices">Цены</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <button class="btn btn-primary open-modal">Записаться</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="hero-badge">Премиальная стоматология</p>
+          <h1>Современная стоматология без боли</h1>
+          <p class="hero-subtitle">
+            Лечение, чистка, имплантация и эстетическая стоматология с заботой о пациентах
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary open-modal">Записаться</button>
+            <a class="btn btn-secondary" href="#services">Наши услуги</a>
+          </div>
+          <ul class="hero-features">
+            <li>Точное цифровое оборудование</li>
+            <li>Опытные врачи</li>
+            <li>Гарантия качества</li>
+          </ul>
+        </div>
+
+        <div class="hero-media reveal">
+          <img
+            src="images/hero.jpg"
+            alt="Современный стоматологический кабинет"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="advantages">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Почему выбирают нашу клинику</h2>
+          <p>Мы сочетаем экспертность врачей, комфорт и современные технологии лечения</p>
+        </div>
+
+        <div class="cards-grid advantages-grid">
+          <article class="card reveal">
+            <span class="icon">👨‍⚕️</span>
+            <h3>Опытные врачи</h3>
+            <p>Команда специалистов с многолетней практикой и постоянным обучением.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon">🦷</span>
+            <h3>Современное оборудование</h3>
+            <p>Точная диагностика и эффективное лечение на технологиях нового поколения.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon">💙</span>
+            <h3>Безболезненное лечение</h3>
+            <p>Деликатные методики и безопасная анестезия для вашего спокойствия.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon">📅</span>
+            <h3>Удобная запись</h3>
+            <p>Быстрое оформление заявки онлайн и подбор удобного времени приёма.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon">🎯</span>
+            <h3>Индивидуальный подход</h3>
+            <p>Персональный план лечения с учётом особенностей каждого пациента.</p>
+          </article>
+          <article class="card reveal">
+            <span class="icon">✅</span>
+            <h3>Гарантия качества</h3>
+            <p>Прозрачные стандарты лечения и ответственность за результат.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Услуги</h2>
+          <p>Комплексная стоматологическая помощь для взрослых и детей</p>
+        </div>
+
+        <div class="cards-grid services-grid">
+          <article class="card service-card reveal">
+            <h3>Лечение кариеса</h3>
+            <p>Щадящее лечение с эстетичной реставрацией.</p>
+            <div class="price">от 12 000 тг</div>
+            <button class="btn btn-primary open-modal" data-service="Лечение кариеса">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Профессиональная чистка зубов</h3>
+            <p>Удаление налёта и камня, свежесть и профилактика.</p>
+            <div class="price">от 15 000 тг</div>
+            <button class="btn btn-primary open-modal" data-service="Профессиональная чистка зубов">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Отбеливание</h3>
+            <p>Безопасное осветление эмали под контролем врача.</p>
+            <div class="price">от 40 000 тг</div>
+            <button class="btn btn-primary open-modal" data-service="Отбеливание">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Имплантация</h3>
+            <p>Надёжное восстановление утраченных зубов.</p>
+            <div class="price">от 250 000 тг</div>
+            <button class="btn btn-primary open-modal" data-service="Имплантация">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Брекеты</h3>
+            <p>Исправление прикуса и выравнивание зубов.</p>
+            <div class="price">от 350 000 тг</div>
+            <button class="btn btn-primary open-modal" data-service="Брекеты">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Протезирование</h3>
+            <p>Эстетичные и функциональные ортопедические решения.</p>
+            <div class="price">от 120 000 тг</div>
+            <button class="btn btn-primary open-modal" data-service="Протезирование">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Детская стоматология</h3>
+            <p>Бережный подход и комфорт для маленьких пациентов.</p>
+            <div class="price">от 10 000 тг</div>
+            <button class="btn btn-primary open-modal" data-service="Детская стоматология">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Удаление зубов</h3>
+            <p>Атравматичное удаление любой сложности.</p>
+            <div class="price">от 18 000 тг</div>
+            <button class="btn btn-primary open-modal" data-service="Удаление зубов">Записаться</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="prices">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Цены</h2>
+          <p>Честные и прозрачные цены на ключевые услуги</p>
+        </div>
+
+        <div class="prices-table-wrap reveal">
+          <table class="prices-table">
+            <thead>
+              <tr>
+                <th>Услуга</th>
+                <th>Стоимость</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Консультация</td>
+                <td>5 000 тг</td>
+              </tr>
+              <tr>
+                <td>Лечение кариеса</td>
+                <td>от 12 000 тг</td>
+              </tr>
+              <tr>
+                <td>Чистка зубов</td>
+                <td>15 000 тг</td>
+              </tr>
+              <tr>
+                <td>Отбеливание</td>
+                <td>от 40 000 тг</td>
+              </tr>
+              <tr>
+                <td>Имплантация</td>
+                <td>от 250 000 тг</td>
+              </tr>
+              <tr>
+                <td>Брекеты</td>
+                <td>от 350 000 тг</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="center reveal">
+          <button class="btn btn-primary open-modal">Записаться на консультацию</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contacts">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Контакты</h2>
+          <p>Свяжитесь с нами удобным способом</p>
+        </div>
+
+        <div class="contacts-grid">
+          <div class="card reveal">
+            <h3>Адрес</h3>
+            <p>г. Алматы, пр. Абая, 150</p>
+          </div>
+          <div class="card reveal">
+            <h3>Телефон</h3>
+            <p><a href="tel:+77001234567">+7 (700) 123-45-67</a></p>
+          </div>
+          <div class="card reveal">
+            <h3>WhatsApp</h3>
+            <p><a href="https://wa.me/77001234567" target="_blank" rel="noopener">Написать в WhatsApp</a></p>
+          </div>
+          <div class="card reveal">
+            <h3>График работы</h3>
+            <p>Пн–Сб: 09:00–20:00<br />Вс: 10:00–16:00</p>
+          </div>
+        </div>
+
+        <div class="map-wrap reveal">
+          <iframe
+            title="Карта клиники"
+            src="https://www.google.com/maps?q=Almaty%20Abay%20150&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>DentalCare Premium</h3>
+        <p>Современная стоматология для всей семьи</p>
+      </div>
+      <div>
+        <h4>Меню</h4>
+        <ul>
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#prices">Цены</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+77001234567">+7 (700) 123-45-67</a></li>
+          <li><a href="https://wa.me/77001234567" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>г. Алматы, пр. Абая, 150</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> DentalCare Premium. Все права защищены.
+    </div>
+  </footer>
+
+  <!-- Модальное окно записи -->
+  <div class="modal" id="bookingModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Закрыть" data-close>×</button>
+      <h3 id="modalTitle">Запись на приём</h3>
+      <p class="modal-subtitle">Оставьте заявку, и администратор свяжется с вами</p>
+
+      <form id="bookingForm" novalidate>
+        <div class="form-group">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя" required />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Выбор услуги</label>
+          <select id="service" name="service" required>
+            <option value="">Выберите услугу</option>
+            <option>Лечение кариеса</option>
+            <option>Профессиональная чистка зубов</option>
+            <option>Отбеливание</option>
+            <option>Имплантация</option>
+            <option>Брекеты</option>
+            <option>Протезирование</option>
+            <option>Детская стоматология</option>
+            <option>Удаление зубов</option>
+          </select>
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="time">Удобное время</label>
+          <input type="text" id="time" name="time" placeholder="Например: завтра после 15:00" required />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="comment">Комментарий</label>
+          <textarea id="comment" name="comment" rows="4" placeholder="Ваш комментарий"></textarea>
+        </div>
+
+        <button class="btn btn-primary submit-btn" type="submit">Отправить заявку</button>
+      </form>
+
+      <div id="formMessage" class="form-message" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
