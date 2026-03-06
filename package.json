@@ -1,0 +1,9 @@
+{
+  "name": "stomatolog-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dental clinic website with secure Telegram form backend",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

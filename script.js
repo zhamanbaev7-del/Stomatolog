@@ -1,5 +1,4 @@
-﻿const TOKEN = "8741838676:AAE7-4DQuvqpiEgr_bApBVUvJshYJzECnV0";
-const CHAT_ID = "2033289831";
+const BOOKING_API_URL = "/api/booking";
 
 const header = document.querySelector(".header");
 const modal = document.getElementById("bookingModal");
@@ -18,39 +17,39 @@ const doctorModalFacts = document.getElementById("doctorModalFacts");
 
 const doctorProfiles = {
   anna: {
-    name: "Р”СЂ. РђРЅРЅР° РЎРµСЂРёРєРѕРІР°",
-    meta: "РЎС‚РѕРјР°С‚РѕР»РѕРі-С‚РµСЂР°РїРµРІС‚, СЃС‚Р°Р¶ 8 Р»РµС‚",
-    text: "РЎРїРµС†РёР°Р»РёР·РёСЂСѓРµС‚СЃСЏ РЅР° Р»РµС‡РµРЅРёРё РєР°СЂРёРµСЃР°, СЌСЃС‚РµС‚РёС‡РµСЃРєРѕР№ СЂРµСЃС‚Р°РІСЂР°С†РёРё Рё РїСЂРѕС„РёР»Р°РєС‚РёРєРµ РѕСЃР»РѕР¶РЅРµРЅРёР№.",
+    name: "Др. Анна Серикова",
+    meta: "Стоматолог-терапевт, стаж 8 лет",
+    text: "Специализируется на лечении кариеса, эстетической реставрации и профилактике осложнений.",
     image: "images/doctors/imagesdoctorsanna-profile.png",
     facts: [
-      "РџСЂРѕС„РёР»СЊ: С‚РµСЂР°РїРёСЏ, С…СѓРґРѕР¶РµСЃС‚РІРµРЅРЅР°СЏ СЂРµСЃС‚Р°РІСЂР°С†РёСЏ",
-      "Р‘РѕР»РµРµ 2500 РєР»РёРЅРёС‡РµСЃРєРёС… СЃР»СѓС‡Р°РµРІ",
-      "Р Р°Р±РѕС‚Р° РїРѕ РјРµР¶РґСѓРЅР°СЂРѕРґРЅС‹Рј РїСЂРѕС‚РѕРєРѕР»Р°Рј Р»РµС‡РµРЅРёСЏ",
-      "РђРєС†РµРЅС‚ РЅР° Р±РµСЂРµР¶РЅРѕРµ Рё Р±РµР·Р±РѕР»РµР·РЅРµРЅРЅРѕРµ Р»РµС‡РµРЅРёРµ"
+      "Профиль: терапия, художественная реставрация",
+      "Более 2500 клинических случаев",
+      "Работа по международным протоколам лечения",
+      "Акцент на бережное и безболезненное лечение"
     ]
   },
   maxim: {
-    name: "Р”СЂ. РњР°РєСЃРёРј Р•СЂР¶Р°РЅРѕРІ",
-    meta: "РћСЂС‚РѕРїРµРґ-РёРјРїР»Р°РЅС‚РѕР»РѕРі, СЃС‚Р°Р¶ 10 Р»РµС‚",
-    text: "РџСЂРѕРІРѕРґРёС‚ РёРјРїР»Р°РЅС‚Р°С†РёСЋ Рё РїСЂРѕС‚РµР·РёСЂРѕРІР°РЅРёРµ СЃ С†РёС„СЂРѕРІС‹Рј РїР»Р°РЅРёСЂРѕРІР°РЅРёРµРј Рё РїСЂРѕРіРЅРѕР·РёСЂСѓРµРјС‹Рј СЂРµР·СѓР»СЊС‚Р°С‚РѕРј.",
+    name: "Др. Максим Ержанов",
+    meta: "Ортопед-имплантолог, стаж 10 лет",
+    text: "Проводит имплантацию и протезирование с цифровым планированием и прогнозируемым результатом.",
     image: "images/doctors/imagesdoctorsmaxim-profile.png",
     facts: [
-      "РџСЂРѕС„РёР»СЊ: РёРјРїР»Р°РЅС‚Р°С†РёСЏ, С‚РѕС‚Р°Р»СЊРЅРѕРµ РїСЂРѕС‚РµР·РёСЂРѕРІР°РЅРёРµ",
-      "Р‘РѕР»РµРµ 1500 СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅС‹С… РёРјРїР»Р°РЅС‚РѕРІ",
-      "3D-РїР»Р°РЅРёСЂРѕРІР°РЅРёРµ Рё РЅР°РІРёРіР°С†РёРѕРЅРЅС‹Рµ С€Р°Р±Р»РѕРЅС‹",
-      "Р’РѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ С„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅРѕР№ СЌСЃС‚РµС‚РёРєРё СѓР»С‹Р±РєРё"
+      "Профиль: имплантация, тотальное протезирование",
+      "Более 1500 установленных имплантов",
+      "3D-планирование и навигационные шаблоны",
+      "Восстановление функциональной эстетики улыбки"
     ]
   },
   alina: {
-    name: "Р”СЂ. РђР»РёРЅР° РўСѓСЂСЃСѓРЅРѕРІР°",
-    meta: "Р”РµС‚СЃРєРёР№ СЃС‚РѕРјР°С‚РѕР»РѕРі, СЃС‚Р°Р¶ 6 Р»РµС‚",
-    text: "Р Р°Р±РѕС‚Р°РµС‚ СЃ РґРµС‚СЊРјРё РјСЏРіРєРѕ Рё РІРЅРёРјР°С‚РµР»СЊРЅРѕ, С„РѕСЂРјРёСЂСѓСЏ РґРѕРІРµСЂРёРµ Рє Р»РµС‡РµРЅРёСЋ СЃ РїРµСЂРІРѕРіРѕ РїСЂРёРµРјР°.",
+    name: "Др. Алина Турсунова",
+    meta: "Детский стоматолог, стаж 6 лет",
+    text: "Работает с детьми мягко и внимательно, формируя доверие к лечению с первого приема.",
     image: "images/doctors/imagesdoctorsalina-profile.png",
     facts: [
-      "РџСЂРѕС„РёР»СЊ: РґРµС‚СЃРєР°СЏ С‚РµСЂР°РїРёСЏ Рё РїСЂРѕС„РёР»Р°РєС‚РёРєР°",
-      "РђРґР°РїС‚Р°С†РёРѕРЅРЅС‹Р№ РїСЂРёРµРј Р±РµР· СЃС‚СЂРµСЃСЃР°",
-      "РРЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Р№ РїРѕРґС…РѕРґ РїРѕ РІРѕР·СЂР°СЃС‚Сѓ СЂРµР±РµРЅРєР°",
-      "РћР±СѓС‡РµРЅРёРµ РїСЂР°РІРёР»СЊРЅРѕР№ РіРёРіРёРµРЅРµ РґР»СЏ СЂРѕРґРёС‚РµР»РµР№ Рё РґРµС‚РµР№"
+      "Профиль: детская терапия и профилактика",
+      "Адаптационный прием без стресса",
+      "ндивидуальный подход по возрасту ребенка",
+      "Обучение правильной гигиене для родителей и детей"
     ]
   }
 };
@@ -195,58 +194,41 @@ function validateForm(formData) {
   [nameInput, phoneField, serviceField, timeField].forEach(clearError);
 
   if (name.length < 2) {
-    setError(nameInput, "Р’РІРµРґРёС‚Рµ РєРѕСЂСЂРµРєС‚РЅРѕРµ РёРјСЏ");
+    setError(nameInput, "Введите корректное имя");
     isValid = false;
   }
 
   const digitsCount = phone.replace(/\D/g, "").length;
   if (digitsCount < 11) {
-    setError(phoneField, "Р’РІРµРґРёС‚Рµ РєРѕСЂСЂРµРєС‚РЅС‹Р№ РЅРѕРјРµСЂ С‚РµР»РµС„РѕРЅР°");
+    setError(phoneField, "Введите корректный номер телефона");
     isValid = false;
   }
 
   if (!service) {
-    setError(serviceField, "Р’С‹Р±РµСЂРёС‚Рµ СѓСЃР»СѓРіСѓ");
+    setError(serviceField, "Выберите услугу");
     isValid = false;
   }
 
   if (time.length < 3) {
-    setError(timeField, "РЈРєР°Р¶РёС‚Рµ СѓРґРѕР±РЅРѕРµ РІСЂРµРјСЏ");
+    setError(timeField, "Укажите удобное время");
     isValid = false;
   }
 
   return isValid;
 }
 
-async function sendToTelegram({ name, phone, service, time, comment }) {
-  const text =
-    "РќРѕРІР°СЏ Р·Р°СЏРІРєР° СЃ СЃР°Р№С‚Р° СЃС‚РѕРјР°С‚РѕР»РѕРіРёРё\n\n" +
-    `РРјСЏ: ${name}\n` +
-    `РўРµР»РµС„РѕРЅ: ${phone}\n` +
-    `РЈСЃР»СѓРіР°: ${service}\n` +
-    `РЈРґРѕР±РЅРѕРµ РІСЂРµРјСЏ: ${time}\n` +
-    `РљРѕРјРјРµРЅС‚Р°СЂРёР№: ${comment || "-"}`;
+async function sendToTelegram(payload) {
+  const response = await fetch(BOOKING_API_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
 
-  if (TOKEN.includes("PASTE_") || CHAT_ID.includes("PASTE_")) {
-    await new Promise((resolve) => setTimeout(resolve, 700));
-    return { ok: true, demo: true };
-  }
-
-  const botId = TOKEN.split(":")[0];
-  if (CHAT_ID === botId) {
-    throw new Error("CHAT_ID СѓРєР°Р·Р°РЅ РЅРµРІРµСЂРЅРѕ: СЌС‚Рѕ ID Р±РѕС‚Р°, Р° РЅРµ С‡Р°С‚Р°.");
-  }
-
-  const url =
-    `https://api.telegram.org/bot${TOKEN}/sendMessage` +
-    `?chat_id=${encodeURIComponent(CHAT_ID)}` +
-    `&text=${encodeURIComponent(text)}`;
-
-  const response = await fetch(url, { method: "GET" });
-  const data = await response.json();
-
-  if (!data.ok) {
-    throw new Error(data.description || "РћС€РёР±РєР° РѕС‚РїСЂР°РІРєРё РІ Telegram");
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok || !data.ok) {
+    throw new Error(data.error || "Ошибка отправки в Telegram");
   }
 
   return data;
@@ -274,11 +256,11 @@ function setupFormSubmit() {
 
     try {
       submitBtn.disabled = true;
-      submitBtn.textContent = "РћС‚РїСЂР°РІРєР°...";
+      submitBtn.textContent = "Отправка...";
 
       await sendToTelegram(payload);
 
-      formMessage.textContent = "Р—Р°СЏРІРєР° СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅР°. РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ СЃРІСЏР¶РµС‚СЃСЏ СЃ РІР°РјРё РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ.";
+      formMessage.textContent = "Заявка успешно отправлена. Администратор свяжется с вами в ближайшее время.";
       formMessage.classList.add("success");
 
       bookingForm.reset();
@@ -289,13 +271,13 @@ function setupFormSubmit() {
         formMessage.className = "form-message";
       }, 1800);
     } catch (error) {
-      const reason = error?.message ? ` РџСЂРёС‡РёРЅР°: ${error.message}` : "";
-      formMessage.textContent = `РќРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ.${reason}`;
+      const reason = error?.message ? ` Причина: ${error.message}` : "";
+      formMessage.textContent = `Не удалось отправить заявку.${reason}`;
       formMessage.classList.add("error");
       console.error(error);
     } finally {
       submitBtn.disabled = false;
-      submitBtn.textContent = "РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ";
+      submitBtn.textContent = "Отправить заявку";
     }
   });
 }
@@ -343,5 +325,6 @@ setupPhoneMask();
 setupFormSubmit();
 setupFaq();
 setupRevealAnimation();
+
 
 
