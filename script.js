@@ -20,7 +20,7 @@ const doctorProfiles = {
     name: "Др. Анна Серикова",
     meta: "Стоматолог-терапевт, стаж 8 лет",
     text: "Специализируется на лечении кариеса, эстетической реставрации и профилактике осложнений.",
-    image: "images/doctors/maxim-profile.png",
+    image: "images/doctors/imagesdoctorsmaxim-profile.png",
     imagePosition: "center 18%",
     facts: [
       "Профиль: терапия, художественная реставрация",
@@ -33,7 +33,7 @@ const doctorProfiles = {
     name: "Др. Максим Ержанов",
     meta: "Ортопед-имплантолог, стаж 10 лет",
     text: "Проводит имплантацию и протезирование с цифровым планированием и прогнозируемым результатом.",
-    image: "images/doctors/anna-profile.png",
+    image: "images/doctors/imagesdoctorsanna-profile.png",
     imagePosition: "center 18%",
     facts: [
       "Профиль: имплантация, тотальное протезирование",
@@ -46,7 +46,7 @@ const doctorProfiles = {
     name: "Др. Алина Турсунова",
     meta: "Детский стоматолог, стаж 6 лет",
     text: "Работает с детьми мягко и внимательно, формируя доверие к лечению с первого приема.",
-    image: "images/doctors/alina-profile.png",
+    image: "images/doctors/imagesdoctorsalina-profile.png",
     imagePosition: "center 20%",
     facts: [
       "Профиль: детская терапия и профилактика",
