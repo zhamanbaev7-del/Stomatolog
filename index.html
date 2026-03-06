@@ -2,637 +2,366 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aurum Dental Clinic - РџСЂРµРјРёР°Р»СЊРЅР°СЏ СЃС‚РѕРјР°С‚РѕР»РѕРіРёСЏ</title>
+  <title>Подразделение МЧС Атбасарского района</title>
   <meta
     name="description"
-    content="РџСЂРµРјРёР°Р»СЊРЅР°СЏ СЃС‚РѕРјР°С‚РѕР»РѕРіРёСЏ: Р»РµС‡РµРЅРёРµ, С‡РёСЃС‚РєР°, РёРјРїР»Р°РЅС‚Р°С†РёСЏ, РѕСЂС‚РѕРґРѕРЅС‚РёСЏ Рё СЌСЃС‚РµС‚РёРєР° СѓР»С‹Р±РєРё СЃ Р·Р°Р±РѕС‚РѕР№ Рѕ РєР°Р¶РґРѕРј РїР°С†РёРµРЅС‚Рµ."
+    content="Официальная информационная страница подразделения спасателей МЧС Атбасарского района: направления работы, новости, памятка населению и контакты экстренных служб."
   />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-glow bg-glow-top"></div>
-  <div class="bg-glow bg-glow-bottom"></div>
+  <!-- Верхняя служебная панель -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p><strong>Экстренно:</strong> <a href="tel:101">101</a>, <a href="tel:112">112</a></p>
+      <p><strong>Телефон:</strong> <a href="tel:+77164324855">8 (71643) 2-48-55</a></p>
+      <p><strong>График:</strong> 09:00 - 18:30</p>
+    </div>
+  </div>
 
-  <header class="header" id="top">
-    <div class="container nav-wrap">
-      <a class="logo" href="#top">
-        <span class="logo-mark" aria-hidden="true"></span>
-        Aurum Dental Clinic
+  <!-- Шапка сайта -->
+  <header class="header" id="home">
+    <div class="container header__inner">
+      <a class="logo" href="#home" aria-label="На главную">
+        <span class="logo__mark">MCHS</span>
+        <span class="logo__text">Подразделение МЧС Атбасарского района</span>
       </a>
 
-      <nav class="nav">
-        <a href="#advantages">РџСЂРµРёРјСѓС‰РµСЃС‚РІР°</a>
-        <a href="#services">РЈСЃР»СѓРіРё</a>
-        <a href="#prices">Р¦РµРЅС‹</a>
-        <a href="#doctors">Р’СЂР°С‡Рё</a>
-        <a href="#reviews">РћС‚Р·С‹РІС‹</a>
-        <a href="#contacts">РљРѕРЅС‚Р°РєС‚С‹</a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#home">Главная</a>
+        <a href="#about">О подразделении</a>
+        <a href="#directions">Направления</a>
+        <a href="#news">Новости</a>
+        <a href="#memo">Памятка</a>
+        <a href="#contacts">Контакты</a>
       </nav>
 
-      <button class="btn btn-primary open-modal" type="button">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button>
+      <a class="btn btn--outline header__instagram" href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">
+        Instagram
+      </a>
     </div>
+
+    <!-- Мобильное меню -->
+    <nav class="mobile-nav" aria-label="Мобильная навигация">
+      <a href="#home">Главная</a>
+      <a href="#about">О подразделении</a>
+      <a href="#directions">Направления</a>
+      <a href="#news">Новости</a>
+      <a href="#memo">Памятка</a>
+      <a href="#contacts">Контакты</a>
+      <a href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">Наш Instagram</a>
+    </nav>
   </header>
 
   <main>
-    <section class="section hero">
-      <div class="container hero-grid">
-        <div class="hero-content reveal">
-          <p class="hero-badge">РљР»РёРЅРёРєР° СЌСЃС‚РµС‚РёС‡РµСЃРєРѕР№ Рё РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚РµР»СЊРЅРѕР№ СЃС‚РѕРјР°С‚РѕР»РѕРіРёРё</p>
-          <h1>РЎРѕРІСЂРµРјРµРЅРЅР°СЏ СЃС‚РѕРјР°С‚РѕР»РѕРіРёСЏ Р±РµР· Р±РѕР»Рё</h1>
-          <p class="hero-subtitle">
-            Р›РµС‡РµРЅРёРµ, С‡РёСЃС‚РєР°, РёРјРїР»Р°РЅС‚Р°С†РёСЏ Рё СЌСЃС‚РµС‚РёС‡РµСЃРєР°СЏ СЃС‚РѕРјР°С‚РѕР»РѕРіРёСЏ СЃ Р·Р°Р±РѕС‚РѕР№ Рѕ РєР°Р¶РґРѕРј РїР°С†РёРµРЅС‚Рµ.
+    <!-- Главный экран -->
+    <section class="hero section reveal">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="section-kicker">Министерство по чрезвычайным ситуациям Республики Казахстан</p>
+          <h1>Подразделение МЧС Атбасарского района</h1>
+          <p>
+            Мы обеспечиваем безопасность жителей, проводим профилактические мероприятия, тренировки по чрезвычайным
+            ситуациям и обучаем правилам безопасности.
           </p>
 
-          <div class="hero-actions">
-            <button class="btn btn-primary open-modal" type="button">Р—Р°РїРёСЃР°С‚СЊСЃСЏ РЅР° РїСЂРёРµРј</button>
-            <a class="btn btn-secondary" href="#services">РќР°С€Рё СѓСЃР»СѓРіРё</a>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="tel:112">Позвонить 112</a>
+            <a class="btn btn--outline" href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">
+              Наш Instagram
+            </a>
           </div>
 
-          <ul class="hero-list">
-            <li>РЎРѕРІСЂРµРјРµРЅРЅРѕРµ РѕР±РѕСЂСѓРґРѕРІР°РЅРёРµ</li>
-            <li>РћРїС‹С‚РЅС‹Рµ СЃРїРµС†РёР°Р»РёСЃС‚С‹</li>
-            <li>Р‘РµР·Р±РѕР»РµР·РЅРµРЅРЅРѕРµ Р»РµС‡РµРЅРёРµ</li>
-            <li>РЈРґРѕР±РЅР°СЏ Р·Р°РїРёСЃСЊ РѕРЅР»Р°Р№РЅ</li>
+          <div class="hero__badges">
+            <article>Оперативное реагирование</article>
+            <article>Профилактика и обучение</article>
+            <article>Работа с населением</article>
+          </div>
+        </div>
+
+        <div class="hero__media" aria-label="Фото подразделения">
+          <!-- Изображение можно легко заменить на локальный файл из папки images -->
+          <img
+            src="https://images.unsplash.com/photo-1582126892906-5ba118eaf46f?auto=format&fit=crop&w=1200&q=80"
+            alt="Спасатели МЧС на выезде"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- О подразделении -->
+    <section class="section" id="about">
+      <div class="container about reveal">
+        <div>
+          <p class="section-kicker">О подразделении</p>
+          <h2>Официальная служба спасения и профилактики</h2>
+          <p>
+            Подразделение спасателей Атбасарского района занимается предупреждением и ликвидацией чрезвычайных
+            ситуаций, проведением тренировок по эвакуации, обучением населения правилам безопасности и оперативным
+            реагированием на происшествия.
+          </p>
+        </div>
+        <ul>
+          <li>Профилактика пожаров и рисков ЧС</li>
+          <li>Учебные эвакуации в учреждениях района</li>
+          <li>Информационно-разъяснительная работа с жителями</li>
+          <li>Координация действий при экстренных вызовах</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Основные направления -->
+    <section class="section section--alt" id="directions">
+      <div class="container reveal">
+        <p class="section-kicker">Основные направления</p>
+        <h2>Направления работы подразделения</h2>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">🔥</div>
+            <h3>Пожарная безопасность</h3>
+            <p>Проведение профилактических рейдов, инструктажей и обучения по предупреждению возгораний.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">⚠️</div>
+            <h3>Предупреждение ЧС</h3>
+            <p>Мониторинг рисков и информирование населения о действиях в потенциально опасных ситуациях.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🚪</div>
+            <h3>Учебные эвакуации</h3>
+            <p>Организация и сопровождение практических тренировок по эвакуации в школах и организациях.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">👥</div>
+            <h3>Работа с населением</h3>
+            <p>Профилактические беседы, открытые уроки и консультации по вопросам личной безопасности.</p>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🚒</div>
+            <h3>Спасательные операции</h3>
+            <p>Оперативное реагирование на вызовы, участие в ликвидации последствий происшествий и аварий.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Новости -->
+    <section class="section" id="news">
+      <div class="container reveal">
+        <p class="section-kicker">Новости и мероприятия</p>
+        <h2>Последние мероприятия подразделения</h2>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1000&q=80" alt="Учебная эвакуация в школе" />
+            <div>
+              <span class="news-date">05.03.2026</span>
+              <h3>Учебная эвакуация в образовательном учреждении</h3>
+              <p>Проведена практическая тренировка по безопасному выходу из здания и действиям при тревоге.</p>
+              <button type="button">Подробнее</button>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1549317336-206569e8475c?auto=format&fit=crop&w=1000&q=80" alt="Занятие по пожарной безопасности" />
+            <div>
+              <span class="news-date">28.02.2026</span>
+              <h3>Занятия по пожарной безопасности</h3>
+              <p>Сотрудники МЧС провели инструктаж по использованию первичных средств пожаротушения.</p>
+              <button type="button">Подробнее</button>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1000&q=80" alt="Профилактические мероприятия" />
+            <div>
+              <span class="news-date">20.02.2026</span>
+              <h3>Профилактические мероприятия в жилом секторе</h3>
+              <p>Выполнен обход домовладений с памятками по безопасной эксплуатации печного отопления.</p>
+              <button type="button">Подробнее</button>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img src="https://images.unsplash.com/photo-1584448141569-69f342da535c?auto=format&fit=crop&w=1000&q=80" alt="Работа спасателей" />
+            <div>
+              <span class="news-date">12.02.2026</span>
+              <h3>Обучение населения действиям при ЧС</h3>
+              <p>Проведена разъяснительная встреча по алгоритму вызова служб и самоэвакуации.</p>
+              <button type="button">Подробнее</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Памятка -->
+    <section class="section section--alt" id="memo">
+      <div class="container reveal">
+        <p class="section-kicker">Полезная информация</p>
+        <h2>Памятка для жителей района</h2>
+
+        <div class="accordion">
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button">Что делать при пожаре</button>
+            <div class="accordion-content">
+              <ol>
+                <li>Немедленно сообщите по номеру 101 или 112.</li>
+                <li>Покиньте помещение по безопасному маршруту, не используя лифт.</li>
+                <li>Предупредите соседей и не возвращайтесь в зону задымления.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button">Как вызвать экстренные службы</button>
+            <div class="accordion-content">
+              <ol>
+                <li>Наберите 112 с мобильного телефона или 101 для пожарной службы.</li>
+                <li>Четко назовите адрес, ориентиры и характер происшествия.</li>
+                <li>Сохраняйте связь до подтверждения принятия вызова.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button">Правила поведения при чрезвычайной ситуации</button>
+            <div class="accordion-content">
+              <ol>
+                <li>Сохраняйте спокойствие и следуйте указаниям спасателей.</li>
+                <li>Помогайте детям, пожилым людям и людям с ограниченной мобильностью.</li>
+                <li>Не распространяйте непроверенную информацию.</li>
+              </ol>
+            </div>
+          </article>
+
+          <article class="accordion-item">
+            <button class="accordion-trigger" type="button">Основные номера помощи</button>
+            <div class="accordion-content">
+              <ul>
+                <li>Пожарная служба: <strong>101</strong></li>
+                <li>Единый номер экстренных служб: <strong>112</strong></li>
+                <li>Подразделение: <strong>8 (71643) 2-48-55</strong></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея -->
+    <section class="section" id="gallery">
+      <div class="container reveal">
+        <p class="section-kicker">Медиа</p>
+        <h2>Фотоматериалы работы подразделения</h2>
+        <p class="section-note">Карточки можно заменить на реальные фото и видео из Instagram-страницы подразделения.</p>
+
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1469571486292-b53601020f3d?auto=format&fit=crop&w=900&q=80" alt="Работа спасателей на месте происшествия" />
+          <img src="https://images.unsplash.com/photo-1617895153857-82fe79adfcd4?auto=format&fit=crop&w=900&q=80" alt="Профилактический инструктаж" />
+          <img src="https://images.unsplash.com/photo-1626808642875-0aa545482dfb?auto=format&fit=crop&w=900&q=80" alt="Тренировка по эвакуации" />
+          <img src="https://images.unsplash.com/photo-1553002401-b3f55d55f781?auto=format&fit=crop&w=900&q=80" alt="Пожарный расчет" />
+          <img src="https://images.unsplash.com/photo-1569163139394-de4e4f43e4e5?auto=format&fit=crop&w=900&q=80" alt="Работа МЧС с населением" />
+          <img src="https://images.unsplash.com/photo-1593113598332-cd59a93be17f?auto=format&fit=crop&w=900&q=80" alt="Спасательная техника" />
+        </div>
+
+        <a class="btn btn--primary" href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">
+          Смотреть Instagram
+        </a>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section section--alt" id="contacts">
+      <div class="container contacts reveal">
+        <div class="contacts__info">
+          <p class="section-kicker">Контакты</p>
+          <h2>Связь с подразделением</h2>
+
+          <ul>
+            <li><strong>101</strong> - пожарная служба</li>
+            <li><strong>112</strong> - единый номер экстренных служб</li>
+            <li><strong>8 (71643) 2-48-55</strong> - контактный телефон подразделения</li>
+            <li><strong>График:</strong> 09:00 - 18:30</li>
           </ul>
-        </div>
 
-        <div class="hero-media reveal">
-          <img src="images/hero.jpg" alt="Р’СЂР°С‡-СЃС‚РѕРјР°С‚РѕР»РѕРі РІ РєР»РёРЅРёРєРµ" />
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="advantages">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>РџСЂРµРёРјСѓС‰РµСЃС‚РІР° РєР»РёРЅРёРєРё</h2>
-          <p>РџСЂРѕР·СЂР°С‡РЅС‹Р№ РїРѕРґС…РѕРґ, СЃРёР»СЊРЅР°СЏ РєРѕРјР°РЅРґР° Рё С‚РµС…РЅРѕР»РѕРіРёРё, РєРѕС‚РѕСЂС‹Рµ РґР°СЋС‚ СЃС‚Р°Р±РёР»СЊРЅС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚.</p>
-        </div>
-
-        <div class="cards-grid advantages-grid">
-          <article class="card reveal">
-            <span class="icon">01</span>
-            <h3>Р’СЂР°С‡Рё СЃ Р±РѕР»СЊС€РёРј РїСЂР°РєС‚РёС‡РµСЃРєРёРј РѕРїС‹С‚РѕРј</h3>
-            <p>РљР°Р¶РґС‹Р№ СЃРїРµС†РёР°Р»РёСЃС‚ СЂР°Р±РѕС‚Р°РµС‚ РїРѕ РїСЂРѕС‚РѕРєРѕР»Р°Рј, РѕСЃРЅРѕРІР°РЅРЅС‹Рј РЅР° РґРѕРєР°Р·Р°С‚РµР»СЊРЅРѕР№ СЃС‚РѕРјР°С‚РѕР»РѕРіРёРё.</p>
-          </article>
-
-          <article class="card reveal">
-            <span class="icon">02</span>
-            <h3>РЎРѕРІСЂРµРјРµРЅРЅС‹Рµ РјРµС‚РѕРґС‹ РґРёР°РіРЅРѕСЃС‚РёРєРё</h3>
-            <p>Р¦РёС„СЂРѕРІР°СЏ РІРёР·СѓР°Р»РёР·Р°С†РёСЏ Рё С‚РѕС‡РЅРѕРµ РїР»Р°РЅРёСЂРѕРІР°РЅРёРµ СЃРЅРёР¶Р°СЋС‚ СЂРёСЃРєРё Рё СѓСЃРєРѕСЂСЏСЋС‚ Р»РµС‡РµРЅРёРµ.</p>
-          </article>
-
-          <article class="card reveal">
-            <span class="icon">03</span>
-            <h3>РљРѕРјС„РѕСЂС‚ Р±РµР· Р»РёС€РЅРµРіРѕ СЃС‚СЂРµСЃСЃР°</h3>
-            <p>Р”РµР»РёРєР°С‚РЅР°СЏ Р°РЅРµСЃС‚РµР·РёСЏ, СЃРїРѕРєРѕР№РЅР°СЏ Р°С‚РјРѕСЃС„РµСЂР° Рё РІРЅРёРјР°РЅРёРµ Рє РІР°С€РµРјСѓ СЃР°РјРѕС‡СѓРІСЃС‚РІРёСЋ.</p>
-          </article>
-
-          <article class="card reveal">
-            <span class="icon">04</span>
-            <h3>РЅРґРёРІРёРґСѓР°Р»СЊРЅС‹Рµ РїР»Р°РЅС‹ Р»РµС‡РµРЅРёСЏ</h3>
-            <p>РџРѕРґР±РёСЂР°РµРј СЂРµС€РµРЅРёРµ РїРѕРґ РєР»РёРЅРёС‡РµСЃРєСѓСЋ СЃРёС‚СѓР°С†РёСЋ, Р±СЋРґР¶РµС‚ Рё РѕР¶РёРґР°РµРјС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚.</p>
-          </article>
-
-          <article class="card reveal">
-            <span class="icon">05</span>
-            <h3>Р§РµСЃС‚РЅС‹Р№ РїРѕРґС…РѕРґ Рє СЃС‚РѕРёРјРѕСЃС‚Рё</h3>
-            <p>Р”Рѕ РЅР°С‡Р°Р»Р° Р»РµС‡РµРЅРёСЏ СЃРѕРіР»Р°СЃРѕРІС‹РІР°РµРј СЌС‚Р°РїС‹, СЃСЂРѕРєРё Рё СЃС‚РѕРёРјРѕСЃС‚СЊ Р±РµР· СЃРєСЂС‹С‚С‹С… РґРѕРїР»Р°С‚.</p>
-          </article>
-
-          <article class="card reveal">
-            <span class="icon">06</span>
-            <h3>Р‘С‹СЃС‚СЂР°СЏ Р·Р°РїРёСЃСЊ С‡РµСЂРµР· СЃР°Р№С‚ Рё Telegram</h3>
-            <p>РћСЃС‚Р°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ РѕРЅР»Р°Р№РЅ, Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ РїРѕРґС‚РІРµСЂРґРёС‚ РІСЂРµРјСЏ Рё РѕС‚РІРµС‚РёС‚ РЅР° РІРѕРїСЂРѕСЃС‹.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="services">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>РЈСЃР»СѓРіРё</h2>
-          <p>РљРѕРјРїР»РµРєСЃРЅР°СЏ РїРѕРјРѕС‰СЊ РѕС‚ РїСЂРѕС„РёР»Р°РєС‚РёРєРё РґРѕ СЃР»РѕР¶РЅРѕРіРѕ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёСЏ Р·СѓР±РЅРѕРіРѕ СЂСЏРґР°.</p>
-        </div>
-
-        <div class="cards-grid services-grid">
-          <article class="card service-card reveal">
-            <h3>Р›РµС‡РµРЅРёРµ РєР°СЂРёРµСЃР°</h3>
-            <p>Р©Р°РґСЏС‰РµРµ Р»РµС‡РµРЅРёРµ Рё С‚РѕС‡РЅР°СЏ СЂРµСЃС‚Р°РІСЂР°С†РёСЏ РµСЃС‚РµСЃС‚РІРµРЅРЅРѕР№ С„РѕСЂРјС‹ Р·СѓР±Р°.</p>
-            <div class="price">РѕС‚ 12 000 С‚Рі</div>
-            <button class="btn btn-primary open-modal" type="button" data-service="Р›РµС‡РµРЅРёРµ РєР°СЂРёРµСЃР°">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button>
-          </article>
-
-          <article class="card service-card reveal">
-            <h3>РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅР°СЏ С‡РёСЃС‚РєР° Р·СѓР±РѕРІ</h3>
-            <p>РЈРґР°Р»РµРЅРёРµ РЅР°Р»РµС‚Р° Рё РєР°РјРЅСЏ, РїСЂРѕС„РёР»Р°РєС‚РёРєР° РєР°СЂРёРµСЃР° Рё Р·Р°Р±РѕР»РµРІР°РЅРёР№ РґРµСЃРµРЅ.</p>
-            <div class="price">РѕС‚ 15 000 С‚Рі</div>
-            <button class="btn btn-primary open-modal" type="button" data-service="РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅР°СЏ С‡РёСЃС‚РєР° Р·СѓР±РѕРІ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button>
-          </article>
-
-          <article class="card service-card reveal popular">
-            <span class="tag">РџРѕРїСѓР»СЏСЂРЅРѕ</span>
-            <h3>РћС‚Р±РµР»РёРІР°РЅРёРµ Р·СѓР±РѕРІ</h3>
-            <p>РљРѕРЅС‚СЂРѕР»РёСЂСѓРµРјРѕРµ РѕСЃРІРµС‚Р»РµРЅРёРµ СЌРјР°Р»Рё СЃ Р±РµР·РѕРїР°СЃРЅС‹Рј РїСЂРѕС‚РѕРєРѕР»РѕРј РїСЂРѕС†РµРґСѓСЂС‹.</p>
-            <div class="price">РѕС‚ 40 000 С‚Рі</div>
-            <button class="btn btn-primary open-modal" type="button" data-service="РћС‚Р±РµР»РёРІР°РЅРёРµ Р·СѓР±РѕРІ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button>
-          </article>
-
-          <article class="card service-card reveal">
-            <h3>РјРїР»Р°РЅС‚Р°С†РёСЏ</h3>
-            <p>РќР°РґРµР¶РЅРѕРµ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ СѓС‚СЂР°С‡РµРЅРЅС‹С… Р·СѓР±РѕРІ СЃ РґРѕР»РіРѕСЃСЂРѕС‡РЅС‹Рј РїСЂРѕРіРЅРѕР·РѕРј.</p>
-            <div class="price">РѕС‚ 250 000 С‚Рі</div>
-            <button class="btn btn-primary open-modal" type="button" data-service="РјРїР»Р°РЅС‚Р°С†РёСЏ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button>
-          </article>
-
-          <article class="card service-card reveal popular">
-            <span class="tag">РџРѕРїСѓР»СЏСЂРЅРѕ</span>
-            <h3>Р‘СЂРµРєРµС‚С‹</h3>
-            <p>СЃРїСЂР°РІР»РµРЅРёРµ РїСЂРёРєСѓСЃР° Рё РІС‹СЂР°РІРЅРёРІР°РЅРёРµ Р·СѓР±РѕРІ РґР»СЏ С„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅРѕР№ СѓР»С‹Р±РєРё.</p>
-            <div class="price">РѕС‚ 350 000 С‚Рі</div>
-            <button class="btn btn-primary open-modal" type="button" data-service="Р‘СЂРµРєРµС‚С‹">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button>
-          </article>
-
-          <article class="card service-card reveal">
-            <h3>РџСЂРѕС‚РµР·РёСЂРѕРІР°РЅРёРµ</h3>
-            <p>Р­СЃС‚РµС‚РёС‡РЅРѕРµ Рё С„СѓРЅРєС†РёРѕРЅР°Р»СЊРЅРѕРµ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ Р¶РµРІР°С‚РµР»СЊРЅРѕР№ СЌС„С„РµРєС‚РёРІРЅРѕСЃС‚Рё.</p>
-            <div class="price">РѕС‚ 180 000 С‚Рі</div>
-            <button class="btn btn-primary open-modal" type="button" data-service="РџСЂРѕС‚РµР·РёСЂРѕРІР°РЅРёРµ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button>
-          </article>
-
-          <article class="card service-card reveal">
-            <h3>Р”РµС‚СЃРєР°СЏ СЃС‚РѕРјР°С‚РѕР»РѕРіРёСЏ</h3>
-            <p>Р‘РµСЂРµР¶РЅС‹Р№ РїРѕРґС…РѕРґ, РїСЂРѕС„РёР»Р°РєС‚РёРєР° Рё Р»РµС‡РµРЅРёРµ СЃ РєРѕРјС„РѕСЂС‚РѕРј РґР»СЏ СЂРµР±РµРЅРєР°.</p>
-            <div class="price">РѕС‚ 10 000 С‚Рі</div>
-            <button class="btn btn-primary open-modal" type="button" data-service="Р”РµС‚СЃРєР°СЏ СЃС‚РѕРјР°С‚РѕР»РѕРіРёСЏ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button>
-          </article>
-
-          <article class="card service-card reveal">
-            <h3>РЈРґР°Р»РµРЅРёРµ Р·СѓР±РѕРІ</h3>
-            <p>РђС‚СЂР°РІРјР°С‚РёС‡РЅРѕРµ СѓРґР°Р»РµРЅРёРµ СЃ РєРѕРЅС‚СЂРѕР»РµРј Р·Р°Р¶РёРІР»РµРЅРёСЏ Рё СЂРµРєРѕРјРµРЅРґР°С†РёСЏРјРё.</p>
-            <div class="price">РѕС‚ 10 000 С‚Рі</div>
-            <button class="btn btn-primary open-modal" type="button" data-service="РЈРґР°Р»РµРЅРёРµ Р·СѓР±РѕРІ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="prices">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Р¦РµРЅС‹</h2>
-          <p>Р‘Р°Р·РѕРІС‹Рµ С†РµРЅС‹ РЅР° РїРѕРїСѓР»СЏСЂРЅС‹Рµ СѓСЃР»СѓРіРё. РўРѕС‡РЅР°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ РѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ РїРѕСЃР»Рµ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёРё.</p>
-        </div>
-
-        <div class="prices-table-wrap reveal">
-          <table class="prices-table">
-            <thead>
-              <tr>
-                <th>РЈСЃР»СѓРіР°</th>
-                <th>РЎС‚РѕРёРјРѕСЃС‚СЊ</th>
-                <th>Р—Р°РїРёСЃСЊ</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>РљРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ</td>
-                <td>5 000 С‚Рі</td>
-                <td><button class="btn btn-small open-modal" type="button" data-service="РљРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button></td>
-              </tr>
-              <tr>
-                <td>Р›РµС‡РµРЅРёРµ РєР°СЂРёРµСЃР°</td>
-                <td>РѕС‚ 12 000 С‚Рі</td>
-                <td><button class="btn btn-small open-modal" type="button" data-service="Р›РµС‡РµРЅРёРµ РєР°СЂРёРµСЃР°">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button></td>
-              </tr>
-              <tr>
-                <td>Р§РёСЃС‚РєР° Р·СѓР±РѕРІ</td>
-                <td>15 000 С‚Рі</td>
-                <td><button class="btn btn-small open-modal" type="button" data-service="РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅР°СЏ С‡РёСЃС‚РєР° Р·СѓР±РѕРІ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button></td>
-              </tr>
-              <tr class="row-popular">
-                <td>РћС‚Р±РµР»РёРІР°РЅРёРµ</td>
-                <td>РѕС‚ 40 000 С‚Рі</td>
-                <td><button class="btn btn-small open-modal" type="button" data-service="РћС‚Р±РµР»РёРІР°РЅРёРµ Р·СѓР±РѕРІ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button></td>
-              </tr>
-              <tr>
-                <td>РјРїР»Р°РЅС‚Р°С†РёСЏ</td>
-                <td>РѕС‚ 250 000 С‚Рі</td>
-                <td><button class="btn btn-small open-modal" type="button" data-service="РјРїР»Р°РЅС‚Р°С†РёСЏ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button></td>
-              </tr>
-              <tr class="row-popular">
-                <td>Р‘СЂРµРєРµС‚С‹</td>
-                <td>РѕС‚ 350 000 С‚Рі</td>
-                <td><button class="btn btn-small open-modal" type="button" data-service="Р‘СЂРµРєРµС‚С‹">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button></td>
-              </tr>
-              <tr>
-                <td>РџСЂРѕС‚РµР·РёСЂРѕРІР°РЅРёРµ</td>
-                <td>РѕС‚ 180 000 С‚Рі</td>
-                <td><button class="btn btn-small open-modal" type="button" data-service="РџСЂРѕС‚РµР·РёСЂРѕРІР°РЅРёРµ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button></td>
-              </tr>
-              <tr>
-                <td>РЈРґР°Р»РµРЅРёРµ Р·СѓР±Р°</td>
-                <td>РѕС‚ 10 000 С‚Рі</td>
-                <td><button class="btn btn-small open-modal" type="button" data-service="РЈРґР°Р»РµРЅРёРµ Р·СѓР±РѕРІ">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p class="prices-note reveal">РўРѕС‡РЅР°СЏ СЃС‚РѕРёРјРѕСЃС‚СЊ РѕРїСЂРµРґРµР»СЏРµС‚СЃСЏ РїРѕСЃР»Рµ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёРё Рё РґРёР°РіРЅРѕСЃС‚РёРєРё.</p>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="doctors">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>РќР°С€Рё РІСЂР°С‡Рё</h2>
-          <p>РљРѕРјР°РЅРґР° СЃРїРµС†РёР°Р»РёСЃС‚РѕРІ, РєРѕС‚РѕСЂРѕР№ РґРѕРІРµСЂСЏСЋС‚ СЃР»РѕР¶РЅС‹Рµ РєР»РёРЅРёС‡РµСЃРєРёРµ СЃР»СѓС‡Р°Рё Рё СЃРµРјРµР№РЅРѕРµ Р»РµС‡РµРЅРёРµ.</p>
-        </div>
-
-        <div class="cards-grid doctors-grid">
-          <article class="card doctor-card reveal">
-            <img src="images/doctors/maxim-profile.png" alt="Р”СЂ. РђРЅРЅР° РЎРµСЂРёРєРѕРІР°" />
-            <h3>Р”СЂ. РђРЅРЅР° РЎРµСЂРёРєРѕРІР°</h3>
-            <p class="doctor-meta">РЎС‚РѕРјР°С‚РѕР»РѕРі-С‚РµСЂР°РїРµРІС‚, СЃС‚Р°Р¶ 8 Р»РµС‚</p>
-            <p>РЎРїРµС†РёР°Р»РёР·РёСЂСѓРµС‚СЃСЏ РЅР° Р»РµС‡РµРЅРёРё РєР°СЂРёРµСЃР°, РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРё Р·СѓР±РѕРІ Рё РїСЂРѕС„РёР»Р°РєС‚РёРєРµ РѕСЃР»РѕР¶РЅРµРЅРёР№.</p>
-            <button class="btn btn-secondary open-doctor-modal" type="button" data-doctor="anna">РџРѕРґСЂРѕР±РЅРµРµ</button>
-          </article>
-
-          <article class="card doctor-card reveal">
-            <img src="images/doctors/anna-profile.png" alt="Р”СЂ. РњР°РєСЃРёРј Р•СЂР¶Р°РЅРѕРІ" />
-            <h3>Р”СЂ. РњР°РєСЃРёРј Р•СЂР¶Р°РЅРѕРІ</h3>
-            <p class="doctor-meta">РћСЂС‚РѕРїРµРґ-РёРјРїР»Р°РЅС‚РѕР»РѕРі, СЃС‚Р°Р¶ 10 Р»РµС‚</p>
-            <p>РџСЂРѕРІРѕРґРёС‚ РёРјРїР»Р°РЅС‚Р°С†РёСЋ Рё РїСЂРѕС‚РµР·РёСЂРѕРІР°РЅРёРµ СЃ С†РёС„СЂРѕРІС‹Рј РїР»Р°РЅРёСЂРѕРІР°РЅРёРµРј Рё РїСЂРѕРіРЅРѕР·РёСЂСѓРµРјС‹Рј СЂРµР·СѓР»СЊС‚Р°С‚РѕРј.</p>
-            <button class="btn btn-secondary open-doctor-modal" type="button" data-doctor="maxim">РџРѕРґСЂРѕР±РЅРµРµ</button>
-          </article>
-
-          <article class="card doctor-card reveal">
-            <img src="images/doctors/alina-profile.png" alt="Р”СЂ. РђР»РёРЅР° РўСѓСЂСЃСѓРЅРѕРІР°" />
-            <h3>Р”СЂ. РђР»РёРЅР° РўСѓСЂСЃСѓРЅРѕРІР°</h3>
-            <p class="doctor-meta">Р”РµС‚СЃРєРёР№ СЃС‚РѕРјР°С‚РѕР»РѕРі, СЃС‚Р°Р¶ 6 Р»РµС‚</p>
-            <p>Р Р°Р±РѕС‚Р°РµС‚ СЃ РґРµС‚СЊРјРё РјСЏРіРєРѕ Рё РІРЅРёРјР°С‚РµР»СЊРЅРѕ, С„РѕСЂРјРёСЂСѓСЏ РґРѕРІРµСЂРёРµ Рє Р»РµС‡РµРЅРёСЋ СЃ РїРµСЂРІРѕРіРѕ РїСЂРёРµРјР°.</p>
-            <button class="btn btn-secondary open-doctor-modal" type="button" data-doctor="alina">РџРѕРґСЂРѕР±РЅРµРµ</button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="reviews">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>РћС‚Р·С‹РІС‹ РїР°С†РёРµРЅС‚РѕРІ</h2>
-          <p>Р РµР°Р»СЊРЅС‹Рµ РІРїРµС‡Р°С‚Р»РµРЅРёСЏ Рѕ РєР°С‡РµСЃС‚РІРµ Р»РµС‡РµРЅРёСЏ, СЃРµСЂРІРёСЃРµ Рё СЂРµР·СѓР»СЊС‚Р°С‚Рµ.</p>
-        </div>
-
-        <div class="cards-grid reviews-grid">
-          <article class="card review-card reveal">
-            <p>"Р›РµС‡РёР»Рё СЃР»РѕР¶РЅС‹Р№ РєР°СЂРёРµСЃ, РІСЃРµ РїСЂРѕС€Р»Рѕ СЃРїРѕРєРѕР№РЅРѕ Рё Р°РєРєСѓСЂР°С‚РЅРѕ. Р’СЂР°С‡ РїРѕРґСЂРѕР±РЅРѕ РѕР±СЉСЏСЃРЅРёР» РєР°Р¶РґС‹Р№ СЌС‚Р°Рї."</p>
-            <h3>РђР№Р¶Р°РЅ Рќ.</h3>
-          </article>
-
-          <article class="card review-card reveal">
-            <p>"РЎРґРµР»Р°Р»Р° С‡РёСЃС‚РєСѓ Рё РѕС‚Р±РµР»РёРІР°РЅРёРµ. РћС‡РµРЅСЊ РґРѕРІРѕР»СЊРЅР° СЂРµР·СѓР»СЊС‚Р°С‚РѕРј, СѓР»С‹Р±РєР° СЃС‚Р°Р»Р° Р·Р°РјРµС‚РЅРѕ СЃРІРµС‚Р»РµРµ."</p>
-            <h3>Р•РєР°С‚РµСЂРёРЅР° Рњ.</h3>
-          </article>
-
-          <article class="card review-card reveal">
-            <p>"РЈСЃС‚Р°РЅР°РІР»РёРІР°Р»Рё РёРјРїР»Р°РЅС‚. РљРѕРјР°РЅРґР° РІРЅРёРјР°С‚РµР»СЊРЅР°СЏ, СЃСЂРѕРєРё РІС‹РґРµСЂР¶Р°Р»Рё, РєР°С‡РµСЃС‚РІРѕ РЅР° СѓСЂРѕРІРЅРµ."</p>
-            <h3>Р СѓСЃР»Р°РЅ Рў.</h3>
-          </article>
-
-          <article class="card review-card reveal">
-            <p>"Р РµР±РµРЅРѕРє РІРїРµСЂРІС‹Рµ РЅРµ Р±РѕСЏР»СЃСЏ СЃС‚РѕРјР°С‚РѕР»РѕРіР°. РЎРїР°СЃРёР±Рѕ Р·Р° РґРµР»РёРєР°С‚РЅС‹Р№ РїРѕРґС…РѕРґ Рё РґСЂСѓР¶РµР»СЋР±РЅСѓСЋ Р°С‚РјРѕСЃС„РµСЂСѓ."</p>
-            <h3>РћР»СЊРіР° Рџ.</h3>
-          </article>
-
-          <article class="card review-card reveal">
-            <p>"РџРѕРЅСЂР°РІРёР»Р°СЃСЊ РїСЂРѕР·СЂР°С‡РЅРѕСЃС‚СЊ РїРѕ СЃС‚РѕРёРјРѕСЃС‚Рё. РЎСЂР°Р·Сѓ РґР°Р»Рё РїР»Р°РЅ Р»РµС‡РµРЅРёСЏ Рё РїРѕРЅСЏС‚РЅС‹Р№ СЂР°СЃС‡РµС‚."</p>
-            <h3>РќСѓСЂР¶Р°РЅ Рљ.</h3>
-          </article>
-
-          <article class="card review-card reveal">
-            <p>"Р‘С‹СЃС‚СЂРѕ Р·Р°РїРёСЃР°Р»Р°СЃСЊ С‡РµСЂРµР· СЃР°Р№С‚, Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ РѕРїРµСЂР°С‚РёРІРЅРѕ РїРѕРґС‚РІРµСЂРґРёР» РІСЂРµРјСЏ РїСЂРёРµРјР°."</p>
-            <h3>РњР°СЂРёРЅР° РЎ.</h3>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="results">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>Р РµР·СѓР»СЊС‚Р°С‚С‹ Р»РµС‡РµРЅРёСЏ</h2>
-          <p>РџСЂРёРјРµСЂС‹ РєР»РёРЅРёС‡РµСЃРєРёС… РєРµР№СЃРѕРІ РґРѕ Рё РїРѕСЃР»Рµ Р»РµС‡РµРЅРёСЏ.</p>
-        </div>
-
-        <div class="cards-grid before-after-grid">
-          <article class="card before-after-card reveal">
-            <div class="before-after-images">
-              <img
-                src="https://images.pexels.com/photos/3845794/pexels-photo-3845794.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Р”Рѕ Р»РµС‡РµРЅРёСЏ"
-              />
-              <img
-                src="https://images.pexels.com/photos/3779711/pexels-photo-3779711.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="РџРѕСЃР»Рµ Р»РµС‡РµРЅРёСЏ"
-              />
-            </div>
-            <h3>Р­СЃС‚РµС‚РёС‡РµСЃРєР°СЏ СЂРµСЃС‚Р°РІСЂР°С†РёСЏ</h3>
-            <p>РЈСЃС‚СЂР°РЅРµРЅРёРµ СЃРєРѕР»РѕРІ Рё РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ РµСЃС‚РµСЃС‚РІРµРЅРЅРѕР№ С„РѕСЂРјС‹ РїРµСЂРµРґРЅРёС… Р·СѓР±РѕРІ.</p>
-          </article>
-
-          <article class="card before-after-card reveal">
-            <div class="before-after-images">
-              <img
-                src="https://images.pexels.com/photos/6627414/pexels-photo-6627414.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Р”Рѕ Р»РµС‡РµРЅРёСЏ"
-              />
-              <img
-                src="https://images.pexels.com/photos/6627421/pexels-photo-6627421.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="РџРѕСЃР»Рµ Р»РµС‡РµРЅРёСЏ"
-              />
-            </div>
-            <h3>РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅР°СЏ РіРёРіРёРµРЅР°</h3>
-            <p>РЈРґР°Р»РµРЅРёРµ РЅР°Р»РµС‚Р° Рё РєР°РјРЅСЏ СЃ Р·Р°РјРµС‚РЅС‹Рј СѓР»СѓС‡С€РµРЅРёРµРј РѕС‚С‚РµРЅРєР° Рё Р·РґРѕСЂРѕРІСЊСЏ РґРµСЃРµРЅ.</p>
-          </article>
-
-          <article class="card before-after-card reveal">
-            <div class="before-after-images">
-              <img
-                src="https://images.pexels.com/photos/6528908/pexels-photo-6528908.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="Р”Рѕ Р»РµС‡РµРЅРёСЏ"
-              />
-              <img
-                src="https://images.pexels.com/photos/6528920/pexels-photo-6528920.jpeg?auto=compress&cs=tinysrgb&w=900"
-                alt="РџРѕСЃР»Рµ Р»РµС‡РµРЅРёСЏ"
-              />
-            </div>
-            <h3>РћСЂС‚РѕРїРµРґРёС‡РµСЃРєРѕРµ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ</h3>
-            <p>Р’РѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ С„СѓРЅРєС†РёРё Рё СЌСЃС‚РµС‚РёРєРё СѓР»С‹Р±РєРё РїРѕСЃР»Рµ РєРѕРјРїР»РµРєСЃРЅРѕРіРѕ Р»РµС‡РµРЅРёСЏ.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="container narrow">
-        <div class="section-head reveal">
-          <h2>Р§Р°СЃС‚Рѕ Р·Р°РґР°РІР°РµРјС‹Рµ РІРѕРїСЂРѕСЃС‹</h2>
-          <p>РљРѕСЂРѕС‚РєРёРµ РѕС‚РІРµС‚С‹ РЅР° СЃР°РјС‹Рµ РІР°Р¶РЅС‹Рµ РІРѕРїСЂРѕСЃС‹ РїРµСЂРµРґ РїРµСЂРІС‹Рј РІРёР·РёС‚РѕРј.</p>
-        </div>
-
-        <div class="faq reveal">
-          <article class="faq-item">
-            <button class="faq-question" type="button">Р‘РѕР»СЊРЅРѕ Р»Рё Р»РµС‡РёС‚СЊ Р·СѓР±С‹?</button>
-            <div class="faq-answer">
-              <p>РќРµС‚. РњС‹ РїСЂРёРјРµРЅСЏРµРј СЃРѕРІСЂРµРјРµРЅРЅС‹Рµ Р°РЅРµСЃС‚РµС‚РёРєРё Рё СЂР°Р±РѕС‚Р°РµРј РґРµР»РёРєР°С‚РЅРѕ, С‡С‚РѕР±С‹ Р»РµС‡РµРЅРёРµ РїСЂРѕС…РѕРґРёР»Рѕ РєРѕРјС„РѕСЂС‚РЅРѕ.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button">РЎРєРѕР»СЊРєРѕ РґР»РёС‚СЃСЏ РїСЂРёРµРј?</button>
-            <div class="faq-answer">
-              <p>РџРµСЂРІРёС‡РЅС‹Р№ РїСЂРёРµРј РѕР±С‹С‡РЅРѕ Р·Р°РЅРёРјР°РµС‚ 30-60 РјРёРЅСѓС‚ РІ Р·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РѕР±СЉРµРјР° РґРёР°РіРЅРѕСЃС‚РёРєРё Рё РєРѕРЅСЃСѓР»СЊС‚Р°С†РёРё.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button">РњРѕР¶РЅРѕ Р»Рё Р·Р°РїРёСЃР°С‚СЊСЃСЏ С‡РµСЂРµР· СЃР°Р№С‚?</button>
-            <div class="faq-answer">
-              <p>Р”Р°. РћСЃС‚Р°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ РІ С„РѕСЂРјРµ, Рё Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ СЃРІСЏР¶РµС‚СЃСЏ СЃ РІР°РјРё РґР»СЏ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ РІСЂРµРјРµРЅРё.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button">РљР°Рє СѓР·РЅР°С‚СЊ С‚РѕС‡РЅСѓСЋ СЃС‚РѕРёРјРѕСЃС‚СЊ?</button>
-            <div class="faq-answer">
-              <p>РџРѕСЃР»Рµ РѕСЃРјРѕС‚СЂР° РІСЂР°С‡ СЃРѕСЃС‚Р°РІР»СЏРµС‚ РїР»Р°РЅ Р»РµС‡РµРЅРёСЏ Рё С„РёРєСЃРёСЂСѓРµС‚ СЃС‚РѕРёРјРѕСЃС‚СЊ РїРѕ СЌС‚Р°РїР°Рј.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button">Р•СЃС‚СЊ Р»Рё Р»РµС‡РµРЅРёРµ РґР»СЏ РґРµС‚РµР№?</button>
-            <div class="faq-answer">
-              <p>Р”Р°, РІ РєР»РёРЅРёРєРµ РІРµРґРµС‚ РїСЂРёРµРј РґРµС‚СЃРєРёР№ СЃС‚РѕРјР°С‚РѕР»РѕРі СЃ Р±РµСЂРµР¶РЅС‹Рј Рё РјСЏРіРєРёРј РїРѕРґС…РѕРґРѕРј.</p>
-            </div>
-          </article>
-
-          <article class="faq-item">
-            <button class="faq-question" type="button">РњРѕР¶РЅРѕ Р»Рё СЃРЅР°С‡Р°Р»Р° РїРѕР»СѓС‡РёС‚СЊ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЋ?</button>
-            <div class="faq-answer">
-              <p>Р”Р°, РІС‹ РјРѕР¶РµС‚Рµ Р·Р°РїРёСЃР°С‚СЊСЃСЏ РЅР° РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЋ РѕС‚РґРµР»СЊРЅРѕ Рё РѕР±СЃСѓРґРёС‚СЊ РІР°СЂРёР°РЅС‚С‹ Р»РµС‡РµРЅРёСЏ.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section promo" id="promo">
-      <div class="container">
-        <div class="promo-box reveal">
-          <p class="promo-label">РЎРїРµС†РїСЂРµРґР»РѕР¶РµРЅРёРµ РјРµСЃСЏС†Р°</p>
-          <h2>РЎРєРёРґРєР° 10% РЅР° РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅСѓСЋ С‡РёСЃС‚РєСѓ РїСЂРё РїРµСЂРІРѕР№ Р·Р°РїРёСЃРё</h2>
-          <p>Р—Р°РїРёС€РёС‚РµСЃСЊ РѕРЅР»Р°Р№РЅ Рё РїРѕР»СѓС‡РёС‚Рµ РїРµСЂСЃРѕРЅР°Р»СЊРЅСѓСЋ РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЋ РїРѕ РґР°Р»СЊРЅРµР№С€РµРјСѓ РїР»Р°РЅСѓ СѓС…РѕРґР° Р·Р° Р·СѓР±Р°РјРё.</p>
-          <button class="btn btn-light open-modal" type="button" data-service="РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅР°СЏ С‡РёСЃС‚РєР° Р·СѓР±РѕРІ">
-            РџРѕР»СѓС‡РёС‚СЊ СЃРєРёРґРєСѓ
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="contacts">
-      <div class="container">
-        <div class="section-head reveal">
-          <h2>РљРѕРЅС‚Р°РєС‚С‹</h2>
-          <p>РњС‹ РЅР°С…РѕРґРёРјСЃСЏ РІ СѓРґРѕР±РЅРѕРј СЂР°Р№РѕРЅРµ, Рє РЅР°Рј Р»РµРіРєРѕ РґРѕР±СЂР°С‚СЊСЃСЏ РЅР° Р°РІС‚Рѕ Рё РѕР±С‰РµСЃС‚РІРµРЅРЅРѕРј С‚СЂР°РЅСЃРїРѕСЂС‚Рµ.</p>
-        </div>
-
-        <div class="contacts-layout">
-          <div class="cards-grid contacts-grid reveal">
-            <article class="card">
-              <h3>РђРґСЂРµСЃ</h3>
-              <p>Рі. РђР»РјР°С‚С‹, РїСЂ. РђР±Р°СЏ, 150</p>
-            </article>
-
-            <article class="card">
-              <h3>РўРµР»РµС„РѕРЅ</h3>
-              <p><a href="tel:+77001234567">+7 (700) 123-45-67</a></p>
-            </article>
-
-            <article class="card">
-              <h3>WhatsApp</h3>
-              <p><a href="https://wa.me/77001234567" target="_blank" rel="noopener">РќР°РїРёСЃР°С‚СЊ РІ WhatsApp</a></p>
-            </article>
-
-            <article class="card">
-              <h3>Р“СЂР°С„РёРє СЂР°Р±РѕС‚С‹</h3>
-              <p>РџРЅ-РЎР±: 09:00-20:00<br />Р’СЃ: 10:00-16:00</p>
-            </article>
-          </div>
-
-          <div class="contact-cta card reveal">
-            <h3>РќСѓР¶РЅР° РїРѕРјРѕС‰СЊ СЃ РІС‹Р±РѕСЂРѕРј СѓСЃР»СѓРіРё?</h3>
-            <p>РћСЃС‚Р°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ, Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ СЃРІСЏР¶РµС‚СЃСЏ СЃ РІР°РјРё РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ Рё РїРѕРґР±РµСЂРµС‚ СѓРґРѕР±РЅРѕРµ РѕРєРЅРѕ РґР»СЏ РІРёР·РёС‚Р°.</p>
-            <button class="btn btn-primary open-modal" type="button">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button>
+          <div class="contacts__actions">
+            <a class="btn btn--primary" href="tel:112">Позвонить</a>
+            <a class="btn btn--outline" href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">
+              Перейти в Instagram
+            </a>
           </div>
         </div>
 
-        <div class="map-wrap reveal">
-          <iframe
-            title="РљР°СЂС‚Р° РєР»РёРЅРёРєРё"
-            src="https://www.google.com/maps?q=Almaty%20Abay%20150&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+        <!-- Простая форма обратной связи без backend -->
+        <form class="feedback-form" id="feedbackForm" novalidate>
+          <h3>Форма обратной связи</h3>
+
+          <label for="name">Имя</label>
+          <input id="name" name="name" type="text" placeholder="Введите имя" required />
+
+          <label for="phone">Телефон</label>
+          <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required />
+
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="4" placeholder="Кратко опишите ваш вопрос" required></textarea>
+
+          <button class="btn btn--primary" type="submit">Отправить</button>
+          <p class="form-message" id="formMessage" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
 
+  <!-- Подвал -->
   <footer class="footer">
-    <div class="container footer-grid">
+    <div class="container footer__grid">
       <div>
-        <h3>Aurum Dental Clinic</h3>
-        <p>РџСЂРµРјРёР°Р»СЊРЅР°СЏ СЃС‚РѕРјР°С‚РѕР»РѕРіРёСЏ РґР»СЏ СѓРІРµСЂРµРЅРЅРѕР№ Рё Р·РґРѕСЂРѕРІРѕР№ СѓР»С‹Р±РєРё.</p>
+        <h3>Подразделение МЧС Атбасарского района</h3>
+        <p>МЧС Республики Казахстан</p>
       </div>
-
       <div>
-        <h4>РњРµРЅСЋ</h4>
+        <h4>Экстренные номера</h4>
         <ul>
-          <li><a href="#advantages">РџСЂРµРёРјСѓС‰РµСЃС‚РІР°</a></li>
-          <li><a href="#services">РЈСЃР»СѓРіРё</a></li>
-          <li><a href="#prices">Р¦РµРЅС‹</a></li>
-          <li><a href="#doctors">Р’СЂР°С‡Рё</a></li>
-          <li><a href="#contacts">РљРѕРЅС‚Р°РєС‚С‹</a></li>
+          <li><a href="tel:101">101</a></li>
+          <li><a href="tel:112">112</a></li>
+          <li><a href="tel:+77164324855">8 (71643) 2-48-55</a></li>
         </ul>
       </div>
-
       <div>
-        <h4>РЈСЃР»СѓРіРё</h4>
+        <h4>Навигация</h4>
         <ul>
-          <li><a href="#services">Р›РµС‡РµРЅРёРµ РєР°СЂРёРµСЃР°</a></li>
-          <li><a href="#services">РјРїР»Р°РЅС‚Р°С†РёСЏ</a></li>
-          <li><a href="#services">Р‘СЂРµРєРµС‚С‹</a></li>
-          <li><a href="#services">Р”РµС‚СЃРєР°СЏ СЃС‚РѕРјР°С‚РѕР»РѕРіРёСЏ</a></li>
+          <li><a href="#about">О подразделении</a></li>
+          <li><a href="#directions">Направления</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#contacts">Контакты</a></li>
         </ul>
       </div>
-
       <div>
-        <h4>РљРѕРЅС‚Р°РєС‚С‹</h4>
+        <h4>Соцсети</h4>
         <ul>
-          <li><a href="tel:+77001234567">+7 (700) 123-45-67</a></li>
-          <li><a href="https://wa.me/77001234567" target="_blank" rel="noopener">WhatsApp</a></li>
-          <li>Рі. РђР»РјР°С‚С‹, РїСЂ. РђР±Р°СЏ, 150</li>
+          <li>
+            <a href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">Instagram подразделения</a>
+          </li>
         </ul>
       </div>
     </div>
-
-    <div class="footer-bottom">В© <span id="year"></span> Aurum Dental Clinic. Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.</div>
+    <div class="footer__bottom">© <span id="currentYear"></span> МЧС РК. Все права защищены.</div>
   </footer>
 
-  <a
-    class="floating-chat"
-    href="https://t.me/your_username"
-    target="_blank"
-    rel="noopener"
-    aria-label="РћС‚РєСЂС‹С‚СЊ Telegram"
-  >
-    Telegram
-  </a>
-
-  <button class="mobile-booking open-modal" type="button">Р—Р°РїРёСЃР°С‚СЊСЃСЏ</button>
-
-  <div class="modal" id="bookingModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
-    <div class="modal-overlay" data-close></div>
-    <div class="modal-content">
-      <button class="modal-close" type="button" aria-label="Р—Р°РєСЂС‹С‚СЊ" data-close>x</button>
-      <h3 id="modalTitle">Р—Р°РїРёСЃСЊ РЅР° РїСЂРёРµРј</h3>
-      <p class="modal-subtitle">РћСЃС‚Р°РІСЊС‚Рµ Р·Р°СЏРІРєСѓ. РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ СЃРІСЏР¶РµС‚СЃСЏ СЃ РІР°РјРё РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ.</p>
-
-      <form id="bookingForm" novalidate>
-        <div class="form-group">
-          <label for="name"></label>
-          <input type="text" id="name" name="name" placeholder="Р’РІРµРґРёС‚Рµ РІР°С€Рµ РёРјСЏ" required />
-          <small class="error-text"></small>
-        </div>
-
-        <div class="form-group">
-          <label for="phone">РўРµР»РµС„РѕРЅ</label>
-          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required />
-          <small class="error-text"></small>
-        </div>
-
-        <div class="form-group">
-          <label for="service">РЈСЃР»СѓРіР°</label>
-          <select id="service" name="service" required>
-            <option value="">Р’С‹Р±РµСЂРёС‚Рµ СѓСЃР»СѓРіСѓ</option>
-            <option>РљРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ</option>
-            <option>Р›РµС‡РµРЅРёРµ РєР°СЂРёРµСЃР°</option>
-            <option>РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅР°СЏ С‡РёСЃС‚РєР° Р·СѓР±РѕРІ</option>
-            <option>РћС‚Р±РµР»РёРІР°РЅРёРµ Р·СѓР±РѕРІ</option>
-            <option>РјРїР»Р°РЅС‚Р°С†РёСЏ</option>
-            <option>Р‘СЂРµРєРµС‚С‹</option>
-            <option>РџСЂРѕС‚РµР·РёСЂРѕРІР°РЅРёРµ</option>
-            <option>Р”РµС‚СЃРєР°СЏ СЃС‚РѕРјР°С‚РѕР»РѕРіРёСЏ</option>
-            <option>РЈРґР°Р»РµРЅРёРµ Р·СѓР±РѕРІ</option>
-          </select>
-          <small class="error-text"></small>
-        </div>
-
-        <div class="form-group">
-          <label for="time">РЈРґРѕР±РЅРѕРµ РІСЂРµРјСЏ</label>
-          <input type="text" id="time" name="time" placeholder="РќР°РїСЂРёРјРµСЂ: Р·Р°РІС‚СЂР° РїРѕСЃР»Рµ 16:00" required />
-          <small class="error-text"></small>
-        </div>
-
-        <div class="form-group">
-          <label for="comment">РљРѕРјРјРµРЅС‚Р°СЂРёР№</label>
-          <textarea id="comment" name="comment" rows="4" placeholder="Р’Р°С€ РєРѕРјРјРµРЅС‚Р°СЂРёР№"></textarea>
-        </div>
-
-        <button class="btn btn-primary submit-btn" type="submit">РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</button>
-      </form>
-
-      <div id="formMessage" class="form-message" aria-live="polite"></div>
-    </div>
-  </div>
-
-  <div class="modal" id="doctorModal" aria-hidden="true" role="dialog" aria-labelledby="doctorModalTitle">
-    <div class="modal-overlay" data-close-doctor></div>
-    <div class="modal-content doctor-modal-content">
-      <button class="modal-close" type="button" aria-label="Р—Р°РєСЂС‹С‚СЊ" data-close-doctor>x</button>
-
-      <div class="doctor-modal-layout">
-        <img id="doctorModalImage" src="" alt="Р¤РѕС‚Рѕ РІСЂР°С‡Р°" />
-        <div>
-          <h3 id="doctorModalTitle"></h3>
-          <p id="doctorModalMeta" class="doctor-meta"></p>
-          <p id="doctorModalText"></p>
-          <ul id="doctorModalFacts" class="doctor-facts"></ul>
-          <button class="btn btn-primary open-modal" type="button">Р—Р°РїРёСЃР°С‚СЊСЃСЏ Рє РІСЂР°С‡Сѓ</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    window.BOOKING_API_URL = "https://stomatolog-api.onrender.com/api/booking";
-  </script>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
