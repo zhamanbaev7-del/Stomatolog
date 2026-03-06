@@ -1,4 +1,4 @@
-const BOOKING_API_URL = "/api/booking";
+const BOOKING_API_URL = window.BOOKING_API_URL || "/api/booking";
 
 const header = document.querySelector(".header");
 const modal = document.getElementById("bookingModal");
@@ -20,7 +20,8 @@ const doctorProfiles = {
     name: "Др. Анна Серикова",
     meta: "Стоматолог-терапевт, стаж 8 лет",
     text: "Специализируется на лечении кариеса, эстетической реставрации и профилактике осложнений.",
-    image: "images/doctors/imagesdoctorsanna-profile.png",
+    image: "images/doctors/maxim-profile.png",
+    imagePosition: "center 18%",
     facts: [
       "Профиль: терапия, художественная реставрация",
       "Более 2500 клинических случаев",
@@ -32,7 +33,8 @@ const doctorProfiles = {
     name: "Др. Максим Ержанов",
     meta: "Ортопед-имплантолог, стаж 10 лет",
     text: "Проводит имплантацию и протезирование с цифровым планированием и прогнозируемым результатом.",
-    image: "images/doctors/imagesdoctorsmaxim-profile.png",
+    image: "images/doctors/anna-profile.png",
+    imagePosition: "center 18%",
     facts: [
       "Профиль: имплантация, тотальное протезирование",
       "Более 1500 установленных имплантов",
@@ -44,7 +46,8 @@ const doctorProfiles = {
     name: "Др. Алина Турсунова",
     meta: "Детский стоматолог, стаж 6 лет",
     text: "Работает с детьми мягко и внимательно, формируя доверие к лечению с первого приема.",
-    image: "images/doctors/imagesdoctorsalina-profile.png",
+    image: "images/doctors/alina-profile.png",
+    imagePosition: "center 20%",
     facts: [
       "Профиль: детская терапия и профилактика",
       "Адаптационный прием без стресса",
@@ -84,6 +87,7 @@ function openDoctorModal(profileKey) {
   doctorModalText.textContent = profile.text;
   doctorModalImage.src = profile.image;
   doctorModalImage.alt = profile.name;
+  doctorModalImage.style.objectPosition = profile.imagePosition || "center 20%";
   doctorModalFacts.innerHTML = profile.facts.map((fact) => `<li>${fact}</li>`).join("");
 
   doctorModal.classList.add("open");
@@ -218,17 +222,25 @@ function validateForm(formData) {
 }
 
 async function sendToTelegram(payload) {
-  const response = await fetch(BOOKING_API_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(payload),
-  });
+  let response;
+  try {
+    response = await fetch(BOOKING_API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+  } catch {
+    throw new Error("Нет соединения с API сервером");
+  }
 
   const data = await response.json().catch(() => ({}));
   if (!response.ok || !data.ok) {
-    throw new Error(data.error || "Ошибка отправки в Telegram");
+    if (response.status === 404 && window.location.hostname.includes("github.io")) {
+      throw new Error("API не найден. GitHub Pages не запускает backend, нужен внешний сервер");
+    }
+    throw new Error(data.error || `Ошибка API (${response.status})`);
   }
 
   return data;

@@ -7,6 +7,7 @@ loadEnv(path.join(__dirname, ".env"));
 const PORT = Number(process.env.PORT || 3000);
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || "";
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || "";
+const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN || "*";
 const MAX_BODY_SIZE = 1_000_000;
 
 const MIME_TYPES = {
@@ -24,6 +25,12 @@ const MIME_TYPES = {
 
 const server = http.createServer(async (req, res) => {
   try {
+    if (req.url === "/api/booking" && req.method === "OPTIONS") {
+      setCorsHeaders(res);
+      res.writeHead(204);
+      return res.end();
+    }
+
     if (req.method === "POST" && req.url === "/api/booking") {
       return handleBooking(req, res);
     }
@@ -44,6 +51,8 @@ server.listen(PORT, () => {
 });
 
 async function handleBooking(req, res) {
+  setCorsHeaders(res);
+
   if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) {
     return sendJson(res, 500, {
       ok: false,
@@ -159,6 +168,12 @@ async function readJsonBody(req) {
 function sendJson(res, statusCode, payload) {
   res.writeHead(statusCode, { "Content-Type": "application/json; charset=utf-8" });
   res.end(JSON.stringify(payload));
+}
+
+function setCorsHeaders(res) {
+  res.setHeader("Access-Control-Allow-Origin", ALLOWED_ORIGIN);
+  res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
 }
 
 function sanitizeValue(value) {
