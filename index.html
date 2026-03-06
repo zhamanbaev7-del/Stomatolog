@@ -1,367 +1,638 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Подразделение МЧС Атбасарского района</title>
+  <title>Aurum Dental Clinic - Премиальная стоматология</title>
   <meta
     name="description"
-    content="Официальная информационная страница подразделения спасателей МЧС Атбасарского района: направления работы, новости, памятка населению и контакты экстренных служб."
+    content="Премиальная стоматология: лечение, чистка, имплантация, ортодонтия и эстетика улыбки с заботой о каждом пациенте."
   />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Верхняя служебная панель -->
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <p><strong>Экстренно:</strong> <a href="tel:101">101</a>, <a href="tel:112">112</a></p>
-      <p><strong>Телефон:</strong> <a href="tel:+77164324855">8 (71643) 2-48-55</a></p>
-      <p><strong>График:</strong> 09:00 - 18:30</p>
-    </div>
-  </div>
+  <div class="bg-glow bg-glow-top"></div>
+  <div class="bg-glow bg-glow-bottom"></div>
 
-  <!-- Шапка сайта -->
-  <header class="header" id="home">
-    <div class="container header__inner">
-      <a class="logo" href="#home" aria-label="На главную">
-        <span class="logo__mark">MCHS</span>
-        <span class="logo__text">Подразделение МЧС Атбасарского района</span>
+  <header class="header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="#top">
+        <span class="logo-mark" aria-hidden="true"></span>
+        Aurum Dental Clinic
       </a>
 
-      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="nav" aria-label="Основная навигация">
-        <a href="#home">Главная</a>
-        <a href="#about">О подразделении</a>
-        <a href="#directions">Направления</a>
-        <a href="#news">Новости</a>
-        <a href="#memo">Памятка</a>
+      <nav class="nav">
+        <a href="#advantages">Преимущества</a>
+        <a href="#services">Услуги</a>
+        <a href="#prices">Цены</a>
+        <a href="#doctors">Врачи</a>
+        <a href="#reviews">Отзывы</a>
         <a href="#contacts">Контакты</a>
       </nav>
 
-      <a class="btn btn--outline header__instagram" href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">
-        Instagram
-      </a>
+      <button class="btn btn-primary open-modal" type="button">Записаться</button>
     </div>
-
-    <!-- Мобильное меню -->
-    <nav class="mobile-nav" aria-label="Мобильная навигация">
-      <a href="#home">Главная</a>
-      <a href="#about">О подразделении</a>
-      <a href="#directions">Направления</a>
-      <a href="#news">Новости</a>
-      <a href="#memo">Памятка</a>
-      <a href="#contacts">Контакты</a>
-      <a href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">Наш Instagram</a>
-    </nav>
   </header>
 
   <main>
-    <!-- Главный экран -->
-    <section class="hero section reveal">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="section-kicker">Министерство по чрезвычайным ситуациям Республики Казахстан</p>
-          <h1>Подразделение МЧС Атбасарского района</h1>
-          <p>
-            Мы обеспечиваем безопасность жителей, проводим профилактические мероприятия, тренировки по чрезвычайным
-            ситуациям и обучаем правилам безопасности.
+    <section class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="hero-badge">Клиника эстетической и восстановительной стоматологии</p>
+          <h1>Современная стоматология без боли</h1>
+          <p class="hero-subtitle">
+            Лечение, чистка, имплантация и эстетическая стоматология с заботой о каждом пациенте.
           </p>
 
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="tel:112">Позвонить 112</a>
-            <a class="btn btn--outline" href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">
-              Наш Instagram
-            </a>
+          <div class="hero-actions">
+            <button class="btn btn-primary open-modal" type="button">Записаться на прием</button>
+            <a class="btn btn-secondary" href="#services">Наши услуги</a>
           </div>
 
-          <div class="hero__badges">
-            <article>Оперативное реагирование</article>
-            <article>Профилактика и обучение</article>
-            <article>Работа с населением</article>
-          </div>
-        </div>
-
-        <div class="hero__media" aria-label="Фото подразделения">
-          <!-- Изображение можно легко заменить на локальный файл из папки images -->
-          <img
-            src="https://images.unsplash.com/photo-1582126892906-5ba118eaf46f?auto=format&fit=crop&w=1200&q=80"
-            alt="Спасатели МЧС на выезде"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- О подразделении -->
-    <section class="section" id="about">
-      <div class="container about reveal">
-        <div>
-          <p class="section-kicker">О подразделении</p>
-          <h2>Официальная служба спасения и профилактики</h2>
-          <p>
-            Подразделение спасателей Атбасарского района занимается предупреждением и ликвидацией чрезвычайных
-            ситуаций, проведением тренировок по эвакуации, обучением населения правилам безопасности и оперативным
-            реагированием на происшествия.
-          </p>
-        </div>
-        <ul>
-          <li>Профилактика пожаров и рисков ЧС</li>
-          <li>Учебные эвакуации в учреждениях района</li>
-          <li>Информационно-разъяснительная работа с жителями</li>
-          <li>Координация действий при экстренных вызовах</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Основные направления -->
-    <section class="section section--alt" id="directions">
-      <div class="container reveal">
-        <p class="section-kicker">Основные направления</p>
-        <h2>Направления работы подразделения</h2>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card__icon">🔥</div>
-            <h3>Пожарная безопасность</h3>
-            <p>Проведение профилактических рейдов, инструктажей и обучения по предупреждению возгораний.</p>
-          </article>
-
-          <article class="card">
-            <div class="card__icon">⚠️</div>
-            <h3>Предупреждение ЧС</h3>
-            <p>Мониторинг рисков и информирование населения о действиях в потенциально опасных ситуациях.</p>
-          </article>
-
-          <article class="card">
-            <div class="card__icon">🚪</div>
-            <h3>Учебные эвакуации</h3>
-            <p>Организация и сопровождение практических тренировок по эвакуации в школах и организациях.</p>
-          </article>
-
-          <article class="card">
-            <div class="card__icon">👥</div>
-            <h3>Работа с населением</h3>
-            <p>Профилактические беседы, открытые уроки и консультации по вопросам личной безопасности.</p>
-          </article>
-
-          <article class="card">
-            <div class="card__icon">🚒</div>
-            <h3>Спасательные операции</h3>
-            <p>Оперативное реагирование на вызовы, участие в ликвидации последствий происшествий и аварий.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Новости -->
-    <section class="section" id="news">
-      <div class="container reveal">
-        <p class="section-kicker">Новости и мероприятия</p>
-        <h2>Последние мероприятия подразделения</h2>
-
-        <div class="news-grid">
-          <article class="news-card">
-            <img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1000&q=80" alt="Учебная эвакуация в школе" />
-            <div>
-              <span class="news-date">05.03.2026</span>
-              <h3>Учебная эвакуация в образовательном учреждении</h3>
-              <p>Проведена практическая тренировка по безопасному выходу из здания и действиям при тревоге.</p>
-              <button type="button">Подробнее</button>
-            </div>
-          </article>
-
-          <article class="news-card">
-            <img src="https://images.unsplash.com/photo-1549317336-206569e8475c?auto=format&fit=crop&w=1000&q=80" alt="Занятие по пожарной безопасности" />
-            <div>
-              <span class="news-date">28.02.2026</span>
-              <h3>Занятия по пожарной безопасности</h3>
-              <p>Сотрудники МЧС провели инструктаж по использованию первичных средств пожаротушения.</p>
-              <button type="button">Подробнее</button>
-            </div>
-          </article>
-
-          <article class="news-card">
-            <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1000&q=80" alt="Профилактические мероприятия" />
-            <div>
-              <span class="news-date">20.02.2026</span>
-              <h3>Профилактические мероприятия в жилом секторе</h3>
-              <p>Выполнен обход домовладений с памятками по безопасной эксплуатации печного отопления.</p>
-              <button type="button">Подробнее</button>
-            </div>
-          </article>
-
-          <article class="news-card">
-            <img src="https://images.unsplash.com/photo-1584448141569-69f342da535c?auto=format&fit=crop&w=1000&q=80" alt="Работа спасателей" />
-            <div>
-              <span class="news-date">12.02.2026</span>
-              <h3>Обучение населения действиям при ЧС</h3>
-              <p>Проведена разъяснительная встреча по алгоритму вызова служб и самоэвакуации.</p>
-              <button type="button">Подробнее</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Памятка -->
-    <section class="section section--alt" id="memo">
-      <div class="container reveal">
-        <p class="section-kicker">Полезная информация</p>
-        <h2>Памятка для жителей района</h2>
-
-        <div class="accordion">
-          <article class="accordion-item">
-            <button class="accordion-trigger" type="button">Что делать при пожаре</button>
-            <div class="accordion-content">
-              <ol>
-                <li>Немедленно сообщите по номеру 101 или 112.</li>
-                <li>Покиньте помещение по безопасному маршруту, не используя лифт.</li>
-                <li>Предупредите соседей и не возвращайтесь в зону задымления.</li>
-              </ol>
-            </div>
-          </article>
-
-          <article class="accordion-item">
-            <button class="accordion-trigger" type="button">Как вызвать экстренные службы</button>
-            <div class="accordion-content">
-              <ol>
-                <li>Наберите 112 с мобильного телефона или 101 для пожарной службы.</li>
-                <li>Четко назовите адрес, ориентиры и характер происшествия.</li>
-                <li>Сохраняйте связь до подтверждения принятия вызова.</li>
-              </ol>
-            </div>
-          </article>
-
-          <article class="accordion-item">
-            <button class="accordion-trigger" type="button">Правила поведения при чрезвычайной ситуации</button>
-            <div class="accordion-content">
-              <ol>
-                <li>Сохраняйте спокойствие и следуйте указаниям спасателей.</li>
-                <li>Помогайте детям, пожилым людям и людям с ограниченной мобильностью.</li>
-                <li>Не распространяйте непроверенную информацию.</li>
-              </ol>
-            </div>
-          </article>
-
-          <article class="accordion-item">
-            <button class="accordion-trigger" type="button">Основные номера помощи</button>
-            <div class="accordion-content">
-              <ul>
-                <li>Пожарная служба: <strong>101</strong></li>
-                <li>Единый номер экстренных служб: <strong>112</strong></li>
-                <li>Подразделение: <strong>8 (71643) 2-48-55</strong></li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Галерея -->
-    <section class="section" id="gallery">
-      <div class="container reveal">
-        <p class="section-kicker">Медиа</p>
-        <h2>Фотоматериалы работы подразделения</h2>
-        <p class="section-note">Карточки можно заменить на реальные фото и видео из Instagram-страницы подразделения.</p>
-
-        <div class="gallery-grid">
-          <img src="https://images.unsplash.com/photo-1469571486292-b53601020f3d?auto=format&fit=crop&w=900&q=80" alt="Работа спасателей на месте происшествия" />
-          <img src="https://images.unsplash.com/photo-1617895153857-82fe79adfcd4?auto=format&fit=crop&w=900&q=80" alt="Профилактический инструктаж" />
-          <img src="https://images.unsplash.com/photo-1626808642875-0aa545482dfb?auto=format&fit=crop&w=900&q=80" alt="Тренировка по эвакуации" />
-          <img src="https://images.unsplash.com/photo-1553002401-b3f55d55f781?auto=format&fit=crop&w=900&q=80" alt="Пожарный расчет" />
-          <img src="https://images.unsplash.com/photo-1569163139394-de4e4f43e4e5?auto=format&fit=crop&w=900&q=80" alt="Работа МЧС с населением" />
-          <img src="https://images.unsplash.com/photo-1593113598332-cd59a93be17f?auto=format&fit=crop&w=900&q=80" alt="Спасательная техника" />
-        </div>
-
-        <a class="btn btn--primary" href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">
-          Смотреть Instagram
-        </a>
-      </div>
-    </section>
-
-    <!-- Контакты -->
-    <section class="section section--alt" id="contacts">
-      <div class="container contacts reveal">
-        <div class="contacts__info">
-          <p class="section-kicker">Контакты</p>
-          <h2>Связь с подразделением</h2>
-
-          <ul>
-            <li><strong>101</strong> - пожарная служба</li>
-            <li><strong>112</strong> - единый номер экстренных служб</li>
-            <li><strong>8 (71643) 2-48-55</strong> - контактный телефон подразделения</li>
-            <li><strong>График:</strong> 09:00 - 18:30</li>
+          <ul class="hero-list">
+            <li>Современное оборудование</li>
+            <li>Опытные специалисты</li>
+            <li>Безболезненное лечение</li>
+            <li>Удобная запись онлайн</li>
           </ul>
+        </div>
 
-          <div class="contacts__actions">
-            <a class="btn btn--primary" href="tel:112">Позвонить</a>
-            <a class="btn btn--outline" href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">
-              Перейти в Instagram
-            </a>
+        <div class="hero-media reveal">
+          <img src="images/hero.jpg" alt="Врач-стоматолог в клинике" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="advantages">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Преимущества клиники</h2>
+          <p>Прозрачный подход, сильная команда и технологии, которые дают стабильный результат.</p>
+        </div>
+
+        <div class="cards-grid advantages-grid">
+          <article class="card reveal">
+            <span class="icon">01</span>
+            <h3>Врачи с большим практическим опытом</h3>
+            <p>Каждый специалист работает по протоколам, основанным на доказательной стоматологии.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="icon">02</span>
+            <h3>Современные методы диагностики</h3>
+            <p>Цифровая визуализация и точное планирование снижают риски и ускоряют лечение.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="icon">03</span>
+            <h3>Комфорт без лишнего стресса</h3>
+            <p>Деликатная анестезия, спокойная атмосфера и внимание к вашему самочувствию.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="icon">04</span>
+            <h3>ндивидуальные планы лечения</h3>
+            <p>Подбираем решение под клиническую ситуацию, бюджет и ожидаемый результат.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="icon">05</span>
+            <h3>Честный подход к стоимости</h3>
+            <p>До начала лечения согласовываем этапы, сроки и стоимость без скрытых доплат.</p>
+          </article>
+
+          <article class="card reveal">
+            <span class="icon">06</span>
+            <h3>Быстрая запись через сайт и Telegram</h3>
+            <p>Оставьте заявку онлайн, администратор подтвердит время и ответит на вопросы.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Услуги</h2>
+          <p>Комплексная помощь от профилактики до сложного восстановления зубного ряда.</p>
+        </div>
+
+        <div class="cards-grid services-grid">
+          <article class="card service-card reveal">
+            <h3>Лечение кариеса</h3>
+            <p>Щадящее лечение и точная реставрация естественной формы зуба.</p>
+            <div class="price">от 12 000 тг</div>
+            <button class="btn btn-primary open-modal" type="button" data-service="Лечение кариеса">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Профессиональная чистка зубов</h3>
+            <p>Удаление налета и камня, профилактика кариеса и заболеваний десен.</p>
+            <div class="price">от 15 000 тг</div>
+            <button class="btn btn-primary open-modal" type="button" data-service="Профессиональная чистка зубов">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal popular">
+            <span class="tag">Популярно</span>
+            <h3>Отбеливание зубов</h3>
+            <p>Контролируемое осветление эмали с безопасным протоколом процедуры.</p>
+            <div class="price">от 40 000 тг</div>
+            <button class="btn btn-primary open-modal" type="button" data-service="Отбеливание зубов">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>мплантация</h3>
+            <p>Надежное восстановление утраченных зубов с долгосрочным прогнозом.</p>
+            <div class="price">от 250 000 тг</div>
+            <button class="btn btn-primary open-modal" type="button" data-service="мплантация">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal popular">
+            <span class="tag">Популярно</span>
+            <h3>Брекеты</h3>
+            <p>справление прикуса и выравнивание зубов для функциональной улыбки.</p>
+            <div class="price">от 350 000 тг</div>
+            <button class="btn btn-primary open-modal" type="button" data-service="Брекеты">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Протезирование</h3>
+            <p>Эстетичное и функциональное восстановление жевательной эффективности.</p>
+            <div class="price">от 180 000 тг</div>
+            <button class="btn btn-primary open-modal" type="button" data-service="Протезирование">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Детская стоматология</h3>
+            <p>Бережный подход, профилактика и лечение с комфортом для ребенка.</p>
+            <div class="price">от 10 000 тг</div>
+            <button class="btn btn-primary open-modal" type="button" data-service="Детская стоматология">Записаться</button>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Удаление зубов</h3>
+            <p>Атравматичное удаление с контролем заживления и рекомендациями.</p>
+            <div class="price">от 10 000 тг</div>
+            <button class="btn btn-primary open-modal" type="button" data-service="Удаление зубов">Записаться</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="prices">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Цены</h2>
+          <p>Базовые цены на популярные услуги. Точная стоимость определяется после консультации.</p>
+        </div>
+
+        <div class="prices-table-wrap reveal">
+          <table class="prices-table">
+            <thead>
+              <tr>
+                <th>Услуга</th>
+                <th>Стоимость</th>
+                <th>Запись</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Консультация</td>
+                <td>5 000 тг</td>
+                <td><button class="btn btn-small open-modal" type="button" data-service="Консультация">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Лечение кариеса</td>
+                <td>от 12 000 тг</td>
+                <td><button class="btn btn-small open-modal" type="button" data-service="Лечение кариеса">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Чистка зубов</td>
+                <td>15 000 тг</td>
+                <td><button class="btn btn-small open-modal" type="button" data-service="Профессиональная чистка зубов">Записаться</button></td>
+              </tr>
+              <tr class="row-popular">
+                <td>Отбеливание</td>
+                <td>от 40 000 тг</td>
+                <td><button class="btn btn-small open-modal" type="button" data-service="Отбеливание зубов">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>мплантация</td>
+                <td>от 250 000 тг</td>
+                <td><button class="btn btn-small open-modal" type="button" data-service="мплантация">Записаться</button></td>
+              </tr>
+              <tr class="row-popular">
+                <td>Брекеты</td>
+                <td>от 350 000 тг</td>
+                <td><button class="btn btn-small open-modal" type="button" data-service="Брекеты">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Протезирование</td>
+                <td>от 180 000 тг</td>
+                <td><button class="btn btn-small open-modal" type="button" data-service="Протезирование">Записаться</button></td>
+              </tr>
+              <tr>
+                <td>Удаление зуба</td>
+                <td>от 10 000 тг</td>
+                <td><button class="btn btn-small open-modal" type="button" data-service="Удаление зубов">Записаться</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="prices-note reveal">Точная стоимость определяется после консультации и диагностики.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="doctors">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Наши врачи</h2>
+          <p>Команда специалистов, которой доверяют сложные клинические случаи и семейное лечение.</p>
+        </div>
+
+        <div class="cards-grid doctors-grid">
+          <article class="card doctor-card reveal">
+            <img src="images/doctors/maxim-profile.png" alt="Др. Анна Серикова" />
+            <h3>Др. Анна Серикова</h3>
+            <p class="doctor-meta">Стоматолог-терапевт, стаж 8 лет</p>
+            <p>Специализируется на лечении кариеса, восстановлении зубов и профилактике осложнений.</p>
+            <button class="btn btn-secondary open-doctor-modal" type="button" data-doctor="anna">Подробнее</button>
+          </article>
+
+          <article class="card doctor-card reveal">
+            <img src="images/doctors/anna-profile.png" alt="Др. Максим Ержанов" />
+            <h3>Др. Максим Ержанов</h3>
+            <p class="doctor-meta">Ортопед-имплантолог, стаж 10 лет</p>
+            <p>Проводит имплантацию и протезирование с цифровым планированием и прогнозируемым результатом.</p>
+            <button class="btn btn-secondary open-doctor-modal" type="button" data-doctor="maxim">Подробнее</button>
+          </article>
+
+          <article class="card doctor-card reveal">
+            <img src="images/doctors/alina-profile.png" alt="Др. Алина Турсунова" />
+            <h3>Др. Алина Турсунова</h3>
+            <p class="doctor-meta">Детский стоматолог, стаж 6 лет</p>
+            <p>Работает с детьми мягко и внимательно, формируя доверие к лечению с первого приема.</p>
+            <button class="btn btn-secondary open-doctor-modal" type="button" data-doctor="alina">Подробнее</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Отзывы пациентов</h2>
+          <p>Реальные впечатления о качестве лечения, сервисе и результате.</p>
+        </div>
+
+        <div class="cards-grid reviews-grid">
+          <article class="card review-card reveal">
+            <p>"Лечили сложный кариес, все прошло спокойно и аккуратно. Врач подробно объяснил каждый этап."</p>
+            <h3>Айжан Н.</h3>
+          </article>
+
+          <article class="card review-card reveal">
+            <p>"Сделала чистку и отбеливание. Очень довольна результатом, улыбка стала заметно светлее."</p>
+            <h3>Екатерина М.</h3>
+          </article>
+
+          <article class="card review-card reveal">
+            <p>"Устанавливали имплант. Команда внимательная, сроки выдержали, качество на уровне."</p>
+            <h3>Руслан Т.</h3>
+          </article>
+
+          <article class="card review-card reveal">
+            <p>"Ребенок впервые не боялся стоматолога. Спасибо за деликатный подход и дружелюбную атмосферу."</p>
+            <h3>Ольга П.</h3>
+          </article>
+
+          <article class="card review-card reveal">
+            <p>"Понравилась прозрачность по стоимости. Сразу дали план лечения и понятный расчет."</p>
+            <h3>Нуржан К.</h3>
+          </article>
+
+          <article class="card review-card reveal">
+            <p>"Быстро записалась через сайт, администратор оперативно подтвердил время приема."</p>
+            <h3>Марина С.</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="results">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Результаты лечения</h2>
+          <p>Примеры клинических кейсов до и после лечения.</p>
+        </div>
+
+        <div class="cards-grid before-after-grid">
+          <article class="card before-after-card reveal">
+            <div class="before-after-images">
+              <img
+                src="https://images.pexels.com/photos/3845794/pexels-photo-3845794.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="До лечения"
+              />
+              <img
+                src="https://images.pexels.com/photos/3779711/pexels-photo-3779711.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="После лечения"
+              />
+            </div>
+            <h3>Эстетическая реставрация</h3>
+            <p>Устранение сколов и восстановление естественной формы передних зубов.</p>
+          </article>
+
+          <article class="card before-after-card reveal">
+            <div class="before-after-images">
+              <img
+                src="https://images.pexels.com/photos/6627414/pexels-photo-6627414.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="До лечения"
+              />
+              <img
+                src="https://images.pexels.com/photos/6627421/pexels-photo-6627421.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="После лечения"
+              />
+            </div>
+            <h3>Профессиональная гигиена</h3>
+            <p>Удаление налета и камня с заметным улучшением оттенка и здоровья десен.</p>
+          </article>
+
+          <article class="card before-after-card reveal">
+            <div class="before-after-images">
+              <img
+                src="https://images.pexels.com/photos/6528908/pexels-photo-6528908.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="До лечения"
+              />
+              <img
+                src="https://images.pexels.com/photos/6528920/pexels-photo-6528920.jpeg?auto=compress&cs=tinysrgb&w=900"
+                alt="После лечения"
+              />
+            </div>
+            <h3>Ортопедическое восстановление</h3>
+            <p>Восстановление функции и эстетики улыбки после комплексного лечения.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <h2>Часто задаваемые вопросы</h2>
+          <p>Короткие ответы на самые важные вопросы перед первым визитом.</p>
+        </div>
+
+        <div class="faq reveal">
+          <article class="faq-item">
+            <button class="faq-question" type="button">Больно ли лечить зубы?</button>
+            <div class="faq-answer">
+              <p>Нет. Мы применяем современные анестетики и работаем деликатно, чтобы лечение проходило комфортно.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">Сколько длится прием?</button>
+            <div class="faq-answer">
+              <p>Первичный прием обычно занимает 30-60 минут в зависимости от объема диагностики и консультации.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">Можно ли записаться через сайт?</button>
+            <div class="faq-answer">
+              <p>Да. Оставьте заявку в форме, и администратор свяжется с вами для подтверждения времени.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">Как узнать точную стоимость?</button>
+            <div class="faq-answer">
+              <p>После осмотра врач составляет план лечения и фиксирует стоимость по этапам.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">Есть ли лечение для детей?</button>
+            <div class="faq-answer">
+              <p>Да, в клинике ведет прием детский стоматолог с бережным и мягким подходом.</p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button">Можно ли сначала получить консультацию?</button>
+            <div class="faq-answer">
+              <p>Да, вы можете записаться на консультацию отдельно и обсудить варианты лечения.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section promo" id="promo">
+      <div class="container">
+        <div class="promo-box reveal">
+          <p class="promo-label">Спецпредложение месяца</p>
+          <h2>Скидка 10% на профессиональную чистку при первой записи</h2>
+          <p>Запишитесь онлайн и получите персональную консультацию по дальнейшему плану ухода за зубами.</p>
+          <button class="btn btn-light open-modal" type="button" data-service="Профессиональная чистка зубов">
+            Получить скидку
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contacts">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Контакты</h2>
+          <p>Мы находимся в удобном районе, к нам легко добраться на авто и общественном транспорте.</p>
+        </div>
+
+        <div class="contacts-layout">
+          <div class="cards-grid contacts-grid reveal">
+            <article class="card">
+              <h3>Адрес</h3>
+              <p>г. Алматы, пр. Абая, 150</p>
+            </article>
+
+            <article class="card">
+              <h3>Телефон</h3>
+              <p><a href="tel:+77001234567">+7 (700) 123-45-67</a></p>
+            </article>
+
+            <article class="card">
+              <h3>WhatsApp</h3>
+              <p><a href="https://wa.me/77001234567" target="_blank" rel="noopener">Написать в WhatsApp</a></p>
+            </article>
+
+            <article class="card">
+              <h3>График работы</h3>
+              <p>Пн-Сб: 09:00-20:00<br />Вс: 10:00-16:00</p>
+            </article>
+          </div>
+
+          <div class="contact-cta card reveal">
+            <h3>Нужна помощь с выбором услуги?</h3>
+            <p>Оставьте заявку, администратор свяжется с вами в ближайшее время и подберет удобное окно для визита.</p>
+            <button class="btn btn-primary open-modal" type="button">Записаться</button>
           </div>
         </div>
 
-        <!-- Простая форма обратной связи без backend -->
-        <form class="feedback-form" id="feedbackForm" novalidate>
-          <h3>Форма обратной связи</h3>
-
-          <label for="name">Имя</label>
-          <input id="name" name="name" type="text" placeholder="Введите имя" required />
-
-          <label for="phone">Телефон</label>
-          <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" required />
-
-          <label for="message">Сообщение</label>
-          <textarea id="message" name="message" rows="4" placeholder="Кратко опишите ваш вопрос" required></textarea>
-
-          <button class="btn btn--primary" type="submit">Отправить</button>
-          <p class="form-message" id="formMessage" aria-live="polite"></p>
-        </form>
+        <div class="map-wrap reveal">
+          <iframe
+            title="Карта клиники"
+            src="https://www.google.com/maps?q=Almaty%20Abay%20150&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- Подвал -->
   <footer class="footer">
-    <div class="container footer__grid">
+    <div class="container footer-grid">
       <div>
-        <h3>Подразделение МЧС Атбасарского района</h3>
-        <p>МЧС Республики Казахстан</p>
+        <h3>Aurum Dental Clinic</h3>
+        <p>Премиальная стоматология для уверенной и здоровой улыбки.</p>
       </div>
+
       <div>
-        <h4>Экстренные номера</h4>
+        <h4>Меню</h4>
         <ul>
-          <li><a href="tel:101">101</a></li>
-          <li><a href="tel:112">112</a></li>
-          <li><a href="tel:+77164324855">8 (71643) 2-48-55</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Навигация</h4>
-        <ul>
-          <li><a href="#about">О подразделении</a></li>
-          <li><a href="#directions">Направления</a></li>
-          <li><a href="#news">Новости</a></li>
+          <li><a href="#advantages">Преимущества</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#prices">Цены</a></li>
+          <li><a href="#doctors">Врачи</a></li>
           <li><a href="#contacts">Контакты</a></li>
         </ul>
       </div>
+
       <div>
-        <h4>Соцсети</h4>
+        <h4>Услуги</h4>
         <ul>
-          <li>
-            <a href="https://www.instagram.com/112atbasar_qutqaryshy/" target="_blank" rel="noopener noreferrer">Instagram подразделения</a>
-          </li>
+          <li><a href="#services">Лечение кариеса</a></li>
+          <li><a href="#services">мплантация</a></li>
+          <li><a href="#services">Брекеты</a></li>
+          <li><a href="#services">Детская стоматология</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+77001234567">+7 (700) 123-45-67</a></li>
+          <li><a href="https://wa.me/77001234567" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li>г. Алматы, пр. Абая, 150</li>
         </ul>
       </div>
     </div>
-    <div class="footer__bottom">© <span id="currentYear"></span> МЧС РК. Все права защищены.</div>
+
+    <div class="footer-bottom">© <span id="year"></span> Aurum Dental Clinic. Все права защищены.</div>
   </footer>
 
+  <a
+    class="floating-chat"
+    href="https://t.me/your_username"
+    target="_blank"
+    rel="noopener"
+    aria-label="Открыть Telegram"
+  >
+    Telegram
+  </a>
+
+  <button class="mobile-booking open-modal" type="button">Записаться</button>
+
+  <div class="modal" id="bookingModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Закрыть" data-close>x</button>
+      <h3 id="modalTitle">Запись на прием</h3>
+      <p class="modal-subtitle">Оставьте заявку. Администратор свяжется с вами в ближайшее время.</p>
+
+      <form id="bookingForm" novalidate>
+        <div class="form-group">
+          <label for="name"></label>
+          <input type="text" id="name" name="name" placeholder="Введите ваше имя" required />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Услуга</label>
+          <select id="service" name="service" required>
+            <option value="">Выберите услугу</option>
+            <option>Консультация</option>
+            <option>Лечение кариеса</option>
+            <option>Профессиональная чистка зубов</option>
+            <option>Отбеливание зубов</option>
+            <option>мплантация</option>
+            <option>Брекеты</option>
+            <option>Протезирование</option>
+            <option>Детская стоматология</option>
+            <option>Удаление зубов</option>
+          </select>
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="time">Удобное время</label>
+          <input type="text" id="time" name="time" placeholder="Например: завтра после 16:00" required />
+          <small class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="comment">Комментарий</label>
+          <textarea id="comment" name="comment" rows="4" placeholder="Ваш комментарий"></textarea>
+        </div>
+
+        <button class="btn btn-primary submit-btn" type="submit">Отправить заявку</button>
+      </form>
+
+      <div id="formMessage" class="form-message" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <div class="modal" id="doctorModal" aria-hidden="true" role="dialog" aria-labelledby="doctorModalTitle">
+    <div class="modal-overlay" data-close-doctor></div>
+    <div class="modal-content doctor-modal-content">
+      <button class="modal-close" type="button" aria-label="Закрыть" data-close-doctor>x</button>
+
+      <div class="doctor-modal-layout">
+        <img id="doctorModalImage" src="" alt="Фото врача" />
+        <div>
+          <h3 id="doctorModalTitle"></h3>
+          <p id="doctorModalMeta" class="doctor-meta"></p>
+          <p id="doctorModalText"></p>
+          <ul id="doctorModalFacts" class="doctor-facts"></ul>
+          <button class="btn btn-primary open-modal" type="button">Записаться к врачу</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.BOOKING_API_URL = "https://stomatolog-api.onrender.com/api/booking";
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
