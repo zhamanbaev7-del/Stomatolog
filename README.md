@@ -1,4 +1,4 @@
-﻿# Stomatolog
+# Stomatolog
 
 Landing page for a dental clinic with a secure booking form.
 
@@ -20,3 +20,14 @@ npm start
 ```
 
 3. Open `http://localhost:3000`.
+
+## Encoding Safety
+
+- Project uses UTF-8 by default (`.editorconfig`).
+- Before push, run:
+
+```bash
+npm run check:encoding
+```
+
+- GitHub Actions runs the same check on every push/PR and blocks broken text (`П...`, `...`, `...`).

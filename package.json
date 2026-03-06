@@ -4,6 +4,7 @@
   "private": true,
   "description": "Dental clinic website with secure Telegram form backend",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "check:encoding": "node scripts/check-encoding.js"
   }
 }
